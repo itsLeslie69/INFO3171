@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3, h4, .sidebar-link, a, p {
+    font-family: Verdana;
+}
+
+h1 {
+    font-size: 3rem /* 48px */;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+h4 {
+    font-size: 1.5rem
+}
+
+p {
+    font-size: 1rem;
+}
+
+td, tr {
+    padding: 1%;
+}
+
+tr {
+    border-bottom: 1px black solid;
+}
+
+.sidebar-link {
+    border: 0.1rem black solid;
+    width: 75%;
+    padding: 4%;
+    font-size: 1rem;
+}
+
+.sidebar-link:hover {
+    background-color: #00C0A3;
+    opacity: 0.8;
+}
+
+.sideContentContainer {
+    padding-left: 12%;
+}
+
+.pageContent {
+    border: 1px black solid;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pageContent ul {
+    width: 100%;
+    border-bottom: 1px black solid;
+}
+
+.pageContent section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.pageContent section h1, h4, p table {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
