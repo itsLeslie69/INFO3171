@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/output.css">
+    <title>Color | Star Air</title>
+    <style>
+        .color-circle {
+            width: 24px;         /* Width of the circle */
+            height: 24px;        /* Height of the circle */
+            border-radius: 50%;  /* Make it circular */
+            margin-right: 10px;  /* Space between circle and text */
+        }
+    </style>
+</head>
+<body class="h-screen">
+    <!--Header Image-->
+    <div class="bg-[#BBA79C] bg-opacity-20 flex flex-col justify-center items-center w-screen h-96 p-5 pt-8">
+        <img src="../images/starair.png" class="w-25 h-3/4">
+        <h1 class="text-5xl">Star Air Pattern Library</h1>
+    </div>
+
+    <div class="sideContentContainer flex h-full">
+        <!-- Sidebar -->
+        <div class="bg-[#008970] p-5 pt-8 w-1/4 h-full flex flex-col">
+            <p>Sidebar</p>
+            <div class="text-black-300 text-sm flex flex-col gap-4">
+                <a href="pages/colour.html" class="sidebar-link">Colour</a>
+                <a href="#" class="sidebar-link">Layout</a>
+                <a href="../pages/typography.html" class="sidebar-link">Typography</a>
+                <a href="#" class="sidebar-link">Data Visualization</a>
+                <p>Components</p>
+                <a href="#" class="sidebar-link">Query Header</a>
+                <a href="#" class="sidebar-link">Destination/Deal Cards</a>
+                <a href="#" class="sidebar-link">Navigation</a>
+                <a href="#" class="sidebar-link">Buttons</a>
+                <a href="#" class="sidebar-link">Time/Place Selection</a>
+                <a href="#" class="sidebar-link">Feedback</a>
+            </div>
+            <!-- Color Squares in Sidebar -->
+            <div class="color-squares mt-8 flex flex-wrap gap-4">
+                <!-- Color 1 -->
+                <div class="w-16 h-16" style="background-color: #F58634;" title="#F58634"></div>
+                <!-- Color 2 -->
+                <div class="w-16 h-16" style="background-color: #54433A;" title="#54433A"></div>
+                <!-- Color 3 -->
+                <div class="w-16 h-16" style="background-color: #BBA79C;" title="#BBA79C"></div>
+                <!-- Color 4 -->
+                <div class="w-16 h-16" style="background-color: #00C0A3;" title="#00C0A3"></div>
+                <!-- Color 5 -->
+                <div class="w-16 h-16" style="background-color: #008970;" title="#008970"></div>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="pageContent p-5 w-3/4">
+            <h2 class="text-4xl">Color</h2>
+            <!-- Color Section -->
+            <section class="color-section">
+                <h3>Brand Colors</h3>
+                <p>These are the primary colors used in Star Air's visual identity, including their lighter opacity variants for softer uses.</p>
+                
+                <!-- Color Blocks -->
+                <div class="color-blocks grid grid-cols-2 gap-8">
+                    <!-- Color 1 -->
+                    <div class="flex items-center">
+                        <div class="color-circle" style="background-color: #F58634;"></div>
+                        <div class="ml-4">
+                            <p><strong>Hex:</strong> #F58634</p>
+                            <p><strong>RGBA:</strong> rgba(245, 134, 52, 0.7)</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Color 2 -->
+                    <div class="flex items-center">
+                        <div class="color-circle" style="background-color: #54433A;"></div>
+                        <div class="ml-4">
+                            <p><strong>Hex:</strong> #54433A</p>
+                            <p><strong>RGBA:</strong> rgba(84, 67, 58, 0.7)</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Color 3 -->
+                    <div class="flex items-center">
+                        <div class="color-circle" style="background-color: #BBA79C;"></div>
+                        <div class="ml-4">
+                            <p><strong>Hex:</strong> #BBA79C</p>
+                            <p><strong>RGBA:</strong> rgba(187, 167, 156, 0.7)</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Color 4 -->
+                    <div class="flex items-center">
+                        <div class="color-circle" style="background-color: #00C0A3;"></div>
+                        <div class="ml-4">
+                            <p><strong>Hex:</strong> #00C0A3</p>
+                            <p><strong>RGBA:</strong> rgba(0, 192, 163, 0.7)</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Color 5 -->
+                    <div class="flex items-center">
+                        <div class="color-circle" style="background-color: #008970;"></div>
+                        <div class="ml-4">
+                            <p><strong>Hex:</strong> #008970</p>
+                            <p><strong>RGBA:</strong> rgba(0, 137, 112, 0.7)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
