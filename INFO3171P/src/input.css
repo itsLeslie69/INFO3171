@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3, h4, .sidebar-link, a, p {
+h1, h2, h3, h4, a, p {
     font-family: Verdana;
 }
 
@@ -25,12 +25,12 @@ h4 {
     font-size: 1.5rem
 }
 
-p {
+p, a {
     font-size: 1rem;
 }
 
 td, tr {
-    padding: 1%;
+    padding: 2%;
 }
 
 tr {
@@ -38,40 +38,21 @@ tr {
 }
 
 .sidebar-link {
-    border: 0.1rem black solid;
-    width: 75%;
-    padding: 4%;
-    font-size: 1rem;
+    /* background-color: #008970; */
+    width: 100%;
+    min-height: 3rem;
+    border-radius: 0.5rem;
+    padding: 5%;
 }
 
 .sidebar-link:hover {
-    background-color: #00C0A3;
-    opacity: 0.8;
+    background-color: #0089704C;   
 }
 
-.sideContentContainer {
-    padding-left: 12%;
+.body-nav-text:hover {
+    color: #00C0A34C;  
 }
 
-.pageContent {
-    border: 1px black solid;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.pageContent ul {
-    width: 100%;
-    border-bottom: 1px black solid;
-}
-
-.pageContent section {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.pageContent section h1, h4, p table {
-    margin-top: 2%;
-    margin-bottom: 2%;
+.offer-button:hover {
+    color: #54433AE5;
 }
