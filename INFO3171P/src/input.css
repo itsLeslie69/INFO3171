@@ -25,6 +25,10 @@ h4 {
     font-size: 1.5rem
 }
 
+p.alert-p-content {
+    font-size: 0.8rem;
+}
+
 p, a {
     font-size: 1rem;
 }
@@ -44,6 +48,14 @@ tr {
     border-radius: 0.5rem;
     padding: 5%;
 }
+
+.color-circle {
+    width: 2rem; /* Width of the circle */
+    height: 2rem; /* Height of the circle */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 2px; /* Space between circle and text */
+    margin-bottom: 1.2rem;
+  }
 
 .sidebar-link:hover {
     background-color: #0089704C;   
