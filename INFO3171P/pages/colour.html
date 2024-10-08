@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/output.css">
-    <title>Buttons | Star Air</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Color | Star Air</title>
+    <style>
+      .color-circle {
+        width: 3rem; /* Width of the circle */
+        height: 3rem; /* Height of the circle */
+        border-radius: 50%; /* Make it circular */
+        margin-right: 2px; /* Space between circle and text */
+      }
+    </style>
+  </head>
 <body class="h-screen">
         <!--Header Image-->
         <div class="bg-[#BBA79C] bg-opacity-20 flex flex-col justify-center items-center w-full h-96 p-5 pt-8">
-            <img src="../images/starair.png" class="w-1/4 h-3/4">
+            <img src="../images/starair.png" class="w-25 h-3/4">
             <h1 class="text-5xl">Star Air Pattern Library</h1>
         </div>
     
-        <div class="sideContentContainer grid grid-cols-6">
     
-        <div class="sideContentContainer flex h-full">
+        <div class="sideContentContainer flex w-full">
          <!--Sidebar-->
          <div class="bg-[#008970] bg-opacity-30 flex flex-col rounded-lg p-5 shadow gap-y-5">
             <p class="border-b-2 border-b-black font-semibold">Basics</p>
@@ -27,7 +38,7 @@
             </div>
             <p class="border-b-2 border-b-black font-semibold">Components</p>
             <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
-                <a href="./queryHero.html" class="sidebar-link">Query Header</a>
+                <a href="./queryHero.html" class="sidebar-link">Query Hero</a>
                 <a href="./destCards.html" class="sidebar-link">Offer Cards</a>
                 <a href="./navigation.html" class="sidebar-link">Navigation</a>
                 <a href="./buttons.html" class="sidebar-link">Buttons</a>
@@ -35,5 +46,351 @@
                 <a href="./feedback.html" class="sidebar-link">Feedback</a>
             </div>
         </div>
-</body>
+
+      <!-- Page Content -->
+      <div class="pageContent flex flex-col  w-3/4 h-full">
+        <h2 class="text-4xl ml-3">Color</h2>
+        <!-- Color Section -->
+
+        <div class="text-3xl pt-3 ml-3"><strong>Brand Colors</strong>
+
+        <p>These are the colors used in Star Air's visual identity</p>
+      </div>
+
+        <div class="bg-gray-100 p-6 ml-3 mr-3">
+          <section class="color-section ml-4">
+            <!-- Color Blocks -->
+            <div class="color-blocks grid grid-cols-2 gap-x-1">
+          
+              <!--Dark Orange-->
+              <div class="text-2xl pt-3">
+                <strong>Bright Orange</strong>
+              </div>
+              <div class="flex items-center">
+                <div
+                  class="color-circle"
+                  style="background-color: #f58634"
+                ></div>
+                <div class="ml-4 pb-8">
+                  <p><strong>Hex:</strong> #F58634</p>
+                  <p><strong>RGBA:</strong> rgba(245, 134, 52, 0.7)</p>
+                </div>
+              </div>
+
+              <!--Dark Lava-->
+              <div class="text-2xl pt-3">
+                <strong>Dark Lava</strong>
+              </div>
+             
+              <div class="flex items-center">
+                <div
+                  class="color-circle"
+                  style="background-color: #54433a"
+                ></div>
+                <div class="ml-4 pb-8">
+                  <p><strong>Hex:</strong> #54433A</p>
+                  <p><strong>RGBA:</strong> rgba(84, 67, 58, 0.7)</p>
+                </div>
+              </div>
+
+              <!--Dark Nude-->
+              <div class="text-2xl pt-3">
+                <strong>Dark Nude</strong>
+              </div>
+          
+              <div class="flex items-center">
+                <div
+                  class="color-circle"
+                  style="background-color: #bba79c"
+                ></div>
+                <div class="ml-4 pb-8">
+                  <p><strong>Hex:</strong> #BBA79C</p>
+                  <p><strong>RGBA:</strong> rgba(187, 167, 156, 0.7)</p>
+                </div>
+              </div>
+              
+              <!--Keppel-->
+              <div class="text-2xl pt-3">
+                <strong>Keppel</strong>
+              </div>
+            
+              <div class="flex items-center">
+                <div
+                  class="color-circle"
+                  style="background-color: #00c0a3"
+                ></div>
+                <div class="ml-4 pb-8">
+                  <p><strong>Hex:</strong> #00C0A3</p>
+                  <p><strong>RGBA:</strong> rgba(0, 192, 163, 0.7)</p>
+                </div>
+              </div>
+
+              <!--Viridian-->
+              <div class="text-2xl pt-3">
+                <strong>Viridian</strong>
+              </div>
+        
+              <div class="flex items-center">
+                <div
+                  class="color-circle"
+                  style="background-color: #008970"
+                ></div>
+                <div class="ml-4 pb-8">
+                  <p><strong>Hex:</strong> #008970</p>
+                  <p><strong>RGBA:</strong> rgba(0, 137, 112, 0.7)</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--Functional Colors-->
+        <section class="color-section ml-4">
+          <div class="text-3xl pt-3"><strong>Functional Colors </strong></div>
+          <p>
+            Functional colors are used to display specific messages or status in
+            design and user interfaces. They can be used to state an error,
+            success, warning. They must be used consistently across the website.
+          </p>
+
+          <div class="bg-gray-100 p-4  mr-3">
+            <div class="color-blocks grid grid-cols-4 gap-x-3">
+              <!--Pigment Green-->
+              <div class="text-1xl pt-3">
+                <strong>Color Name</strong>
+                <p><strong>Pigment Green</strong></p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <strong>Purpose</strong>
+                <p>
+                  Indicate when tasks are fulfilled successfully, data has
+                  loaded, flight has been booked
+                </p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <strong>Code</strong>
+                <p><strong>Hex:</strong> #28A745</p>
+                <p><strong>RGBA:</strong> RGB(40,167,69)</p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <strong>Sample</strong>
+                <div
+                  class="color-circle ml-3 mt-3"
+                  style="background-color: #00c020"
+                ></div>
+              </div>
+
+              <!--Venetian Red-->
+              <div class="text-1xl pt-3">
+                <p><strong>Venetian Red</strong></p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <p>
+                  Assist users in realizing that there was an error,
+                  unsuccessful booking or an issue with a form
+                </p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <p><strong>Hex:</strong>#BD0202</p>
+                <p><strong>RGBA:</strong>RGB(189, 2, 2)</p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <div
+                  class="color-circle ml-3"
+                  style="background-color: #bd0202"
+                ></div>
+              </div>
+              <!--Golden Ochre-->
+              <div class="text-1xl pt-3">
+                <p><strong>Golden Ochre</strong></p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <p>
+                  Indicate a slowdown in the airflow traffic, can be used with
+                  messages indicating that their flight is delayed or there is
+                  severe weather and the flight must be post-poned
+                </p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <p><strong>Hex:</strong> #B88003</p>
+                <p><strong>RGBA:</strong> RGB(184,128,3)</p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <div
+                  class="color-circle ml-3"
+                  style="background-color: #b88003"
+                ></div>
+              </div>
+
+              <!--Safety Yellow-->
+              <div class="text-1xl pt-3">
+                <p><strong>Safety Yellow</strong></p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <p>
+                  Used to communicate messages that ask the user to review
+                  information carefully or ask the user to take caution, a
+                  middle ground between stop and go
+                </p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <p><strong>Hex:</strong>#E9E800</p>
+                <p><strong>RGBA:</strong> RGB(233,232,0)</p>
+              </div>
+
+              <div class="text-1xl pt-3">
+                <div
+                  class="color-circle ml-3"
+                  style="background-color: #e9e800"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+                <!-- Accent Colors Section -->
+                <!--Functional Colors-->
+        <section class="color-section ml-3">
+          <div class="text-3xl pt-3"><strong>Accent Colors</strong></div>
+                  <p>
+                    Accent colors are used to highlight key elements in the interface,
+                    such as buttons, icons, or links.
+                  </p>
+         <!-- Accent Color Blocks -->
+         <div class="bg-gray-100 p-4 w-3/4">
+          <div class="color-blocks grid grid-cols-2 gap-x-2">
+            <!-- Sea Green -->
+            <div class="text-2xl pt-3"><strong>Sea Green</strong></div>
+            <div class="flex items-center">
+              <div
+                class="color-circle"
+                style="background-color: #2e8b57"
+              ></div>
+              <div class="ml-4 pb-8">
+                <p><strong>Hex:</strong> #2E8B57</p>
+                <p><strong>RGBA:</strong> rgba(46, 139, 87, 0.7)</p>
+              </div>
+            </div>
+
+            <!-- Sky Blue -->
+            <div class="text-2xl pt-3"><strong>Sky Blue</strong></div>
+            <div class="flex items-center">
+              <div
+                class="color-circle"
+                style="background-color: #87ceeb"
+              ></div>
+              <div class="ml-4 pb-8">
+                <p><strong>Hex:</strong> #87CEEB</p>
+                <p><strong>RGBA:</strong> rgba(135, 206, 235, 0.7)</p>
+              </div>
+            </div>
+
+            <!-- Plum -->
+            <div class="text-2xl pt-3"><strong>Plum</strong></div>
+            <div class="flex items-center">
+              <div
+                class="color-circle"
+                style="background-color: #dda0dd"
+              ></div>
+              <div class="ml-4 pb-8">
+                <p><strong>Hex:</strong> #DDA0DD</p>
+                <p><strong>RGBA:</strong> rgba(221, 160, 221, 0.7)</p>
+              </div>
+            </div>
+
+            <!-- Coral -->
+            <div class="text-2xl pt-3"><strong>Coral</strong></div>
+            <div class="flex items-center">
+              <div
+                class="color-circle"
+                style="background-color: #ff7f50"
+              ></div>
+              <div class="ml-4 pb-8">
+                <p><strong>Hex:</strong> #FF7F50</p>
+                <p><strong>RGBA:</strong> rgba(255, 127, 80, 0.7)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Neutral Colors Section -->
+      <section class="color-section ml-4 mt-8">
+        <div class="text-3xl pt-3"><strong>Neutral Colors</strong></div>
+        <p>
+          Neutral colors are versatile and create a balanced and clean look.
+          They are often used as background or base colors in designs.
+        </p>
+
+        <!-- Neutral Color Blocks -->
+        <div class="bg-gray-100 p-3 w-3/4">
+          <div class="color-blocks grid grid-cols-2 gap-x-2">
+            <!-- Beige -->
+            <div class="text-2xl pt-3"><strong>Beige</strong></div>
+            <div class="flex items-center">
+              <div
+                class="color-circle"
+                style="background-color: #f5f5dc"
+              ></div>
+              <div class="ml-4 pb-8">
+                <p><strong>Hex:</strong> #F5F5DC</p>
+                <p><strong>RGBA:</strong> rgba(245, 245, 220, 0.7)</p>
+              </div>
+            </div>
+
+            <!-- Light Gray -->
+            <div class="text-2xl pt-3"><strong>Light Gray</strong></div>
+            <div class="flex items-center">
+              <div
+                class="color-circle"
+                style="background-color: #d3d3d3"
+              ></div>
+              <div class="ml-4 pb-8">
+                <p><strong>Hex:</strong> #D3D3D3</p>
+                <p><strong>RGBA:</strong> rgba(211, 211, 211, 0.7)</p>
+              </div>
+            </div>
+
+            <!-- Taupe -->
+            <div class="text-2xl pt-3"><strong>Taupe</strong></div>
+            <div class="flex items-center">
+              <div
+                class="color-circle"
+                style="background-color: #483c32"
+              ></div>
+              <div class="ml-4 pb-8">
+                <p><strong>Hex:</strong> #483C32</p>
+                <p><strong>RGBA:</strong> rgba(72, 60, 50, 0.7)</p>
+              </div>
+            </div>
+
+            <!-- Charcoal -->
+            <div class="text-2xl pt-3"><strong>Charcoal</strong></div>
+            <div class="flex items-center">
+              <div
+                class="color-circle"
+                style="background-color: #36454f"
+              ></div>
+              <div class="ml-4 pb-8">
+                <p><strong>Hex:</strong> #36454F</p>
+                <p><strong>RGBA:</strong> rgba(54, 69, 79, 0.7)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+    </div>
+  </body>
 </html>
