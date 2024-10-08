@@ -68,3 +68,25 @@ tr {
 .offer-button:hover {
     color: #54433AE5;
 }
+
+
+
+.data-table td {
+    text-align: center;
+}
+
+.data-table th  {
+    padding: 4%
+}
+
+.data-table td:hover {
+    background-color: color-mix(in srgb, currentColor 25%, transparent);
+}
+
+p.data-increase {
+    color: #28A745;
+}
+
+p.data-decrease {
+    color: #BD0202;
+}
