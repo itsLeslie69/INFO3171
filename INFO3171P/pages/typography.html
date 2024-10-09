@@ -137,47 +137,54 @@
             <hr>
             <section class="bg-[#D3D3D3] bg-opacity-70 rounded-lg p-5 flex flex-col gap-y-5">
                 <h3>Code</h3>
-                <p class="w-[90%]">
-                    The Tailwind CSS library allows us to effectively style our elements.
+                <p>
+                    The Tailwind CSS library in combination with vanilla CSS allows us to effectively style our elements with a number of utilities and properties used.
                 </p>
-                    <div class="w-[90%] flex flex-col items-center gap-y-5">
-                        <div class="w-[90%] flex justify-between bg-[#BBA79C] bg-opacity-30 rounded-lg  p-5">
-                            <p class="w-[90%] p-5">
-                                Tailwind's width utility class is also used to control the width of this paragraph
-                                so it wraps neatly.
-                            </p>
-                            <code lang="html" class="w-[90%] bg-[#F58634] bg-opacity-80 rounded-lg  p-5">
-                                class="w-[90%]"
-                            </code>
-                        </div>
-                        <div class="w-[90%] flex justify-between bg-[#BBA79C] bg-opacity-30 rounded-lg  p-5">
-                            <p class="w-[90%] p-5">
-                                We often use <strong>padding</strong> to make more effective use of whitespace alongside the 
-                                <code>strong</code> tag.
-                            </p>
-                            <code lang="CSS" class="w-[90%] bg-[#F58634] bg-opacity-80 rounded-lg p-5">
-                                td, tr {
-                                    padding: 2%;
-                                }
-                            </code>
+                <div class="bg-[#36454F] rounded-lg  text-white overflow-x-auto">
+                    <pre class="p-5">
+                        <code>
+h1, h2, h3, h4, a, p {
+    font-family: Verdana;
+}
 
-                        </div>
-                        <div class="w-[90%] flex justify-between bg-[#BBA79C] bg-opacity-30 rounded-lg  p-5">
-                            <p class="w-[90%]">
-                                The base font size is 1rem - 16px - and we scale it from there,
-                                derived from the Tailwind default.
-                            </p>
-                            <code lang="CSS" class="w-[90%] bg-[#F58634] bg-opacity-80 rounded-lg p-5">
-                                h4 {
-                                    font-size: 1.5rem
-                                }
-                                <br>
-                                p {
-                                    font-size: 1rem;
-                                }
-                            </code>
-                        </div>
-                    </div>
+h1 {
+    font-size: 3rem /* 48px */;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+h4 {
+    font-size: 1.5rem
+}
+
+p, a {
+    font-size: 1rem;
+}
+                        </code>
+                    </pre>
+                </div>
+                <p>
+                    Sometimes, the width of paragraph tags need to be set to 90% to ensure it does not touch other elements -
+                    either because of how it wraps or simply because there is nothing to separate it from its adjacent elements.
+                </p>
+                <div class="bg-[#36454F] rounded-lg  text-white overflow-x-auto">
+                    <pre class="p-5">
+                        <code>
+&lt;p class=&quot;w-[90%]&quot;&gt;
+    Some interior text will be set to have a width of 90% of its parent div container.
+&lt;/p&gt;
+                        </code>
+                    </pre>
+                </div>
             </section>
         </div>
     </div>
