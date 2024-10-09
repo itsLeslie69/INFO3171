@@ -1,13 +1,17 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
   content: [
     '*.{html,js}',
-    //'./pages/**/*. {html, js}',
-    './pages/**/*.html', // ??? why does this work?
-    './components/**/*. {html, js}',
+    './pages/**/*.{html,js}',
+    './components/**/*.{html,js}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: theme => ({
+        ...theme('colors'),
+        'custom-skyblue': '#87ceeb',
+      }),
+    },
   },
   plugins: [],
-}
+};
