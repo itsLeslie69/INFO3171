@@ -1,40 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/output.css">
-    <title>Layout | Star Air</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../src/output.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <title>Page Layouts | Star Air</title>
+  <style>
+    pre, code {
+        font-size:small;
+        color:#000000;
+    }
+    .hero-centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      color: #000000;
+    }
+    .hero-centered .content {
+      padding: 20px;
+      margin-top: -100px;
+      background-color: #ffffff;
+    }
+    .sidebar-layout {
+      display: flex;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #008970;
+      color: #ffffff;
+      padding: 20px;
+    }
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      padding: 20px;
+      background-color: #f3f3f3;
+      border: 1px solid #ccc;
+    }
+
+    .stylebox{
+      padding:0.8rem;
+      background-color: #008970;
+      width:102%;
+      height:50%;
+      font-size:medium;
+      justify-content: center;
+   
+    }
+
+    .sidebar-navigation-button{
+      padding:0.8rem;
+      background-color: #FF7F50;
+      color:#f3f3f3;
+      text-shadow: 1px 1px 1px black;
+      border-radius: 3rem;
+    }
+      .sidebar-navigation-button:hover {
+        background-color: #ff7f5083;
+
+}
+
+
+    
+
+  </style>
 </head>
 <body class="h-screen">
-        <!--Header Image-->
-        <div class="bg-[#BBA79C] bg-opacity-20 flex flex-col justify-center items-center w-full h-96 p-5 pt-8">
-            <img src="../images/starair.png" class="w-1/4 h-3/4">
-            <h1 class="text-5xl">Star Air Pattern Library</h1>
+  <div class="bg-[#BBA79C] bg-opacity-20 flex flex-col justify-center items-center w-full h-96 p-5 pt-8">
+      <img src="../images/starair.png" class="w-25 h-3/4" alt="Star Air Logo">
+      <h1 class="text-5xl">Star Air Pattern Library - Page Layouts</h1>
+  </div>
+  
+  <div class="flex w-full">
+    <div class="bg-[#008970] bg-opacity-30 flex flex-col rounded-lg p-5 shadow gap-y-5">
+        <p class="border-b-2 border-b-black font-semibold">Basics</p>
+        <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
+            <a href="../index.html" class="sidebar-link">Color</a>
+            <a href="./layout.html" class="sidebar-link">Layout</a>
+            <a href="./typography.html" class="sidebar-link">Typography</a>
+            <a href="./dataVisualization.html" class="sidebar-link">Data Visualization</a>
         </div>
-    
-        <div class="sideContentContainer grid grid-cols-6">
-    
-        <div class="sideContentContainer flex h-full">
-         <!--Sidebar-->
-         <div class="bg-[#008970] bg-opacity-30 flex flex-col rounded-lg p-5 shadow gap-y-5">
-            <p class="border-b-2 border-b-black font-semibold">Basics</p>
-            <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
-                <a href="./colour.html" class="sidebar-link">Colour</a>
-                <a href="./layout.html" class="sidebar-link">Layout</a>
-                <a href="./typography.html" class="sidebar-link">Typography</a>
-                <a href="./dataVisualization.html" class="sidebar-link">Data Visualization</a>
-            </div>
-            <p class="border-b-2 border-b-black font-semibold">Components</p>
-            <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
-                <a href="./queryHero.html" class="sidebar-link">Query Header</a>
-                <a href="./destCards.html" class="sidebar-link">Offer Cards</a>
-                <a href="./navigation.html" class="sidebar-link">Navigation</a>
-                <a href="./buttons.html" class="sidebar-link">Buttons</a>
-                <a href="./selections.html" class="sidebar-link">Time/Place Selection</a>
-                <a href="./feedback.html" class="sidebar-link">Feedback</a>
-                <a href="./icons.html" class="sidebar-link">Icons</a>
-            </div>
+        <p class="border-b-2 border-b-black font-semibold">Components</p>
+        <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
+            <a href="./queryHero.html" class="sidebar-link">Query Hero</a>
+            <a href="./destCards.html" class="sidebar-link">Offer Cards</a>
+            <a href="./navigation.html" class="sidebar-link">Navigation</a>
+            <a href="./buttons.html" class="sidebar-link">Buttons</a>
+            <a href="./selections.html" class="sidebar-link">Time/Place Selection</a>
+            <a href="./feedback.html" class="sidebar-link">Feedback</a>
         </div>
+    </div>
+
+    <div class="pageContent flex flex-col w-3/4 h-full p-5">
+      <div class="text-4xl ml-3 mb-5">Page Layouts
+
+      <p>Layout Style: <strong> Dashboard with a Sidebar Navigation with a Hero-Centered Header</strong></p>
+ 
+        <h1 class="text-5xl">Star Air Pattern Library - Page Layouts</h1>
+        </div>
+
+
+      <div class=" text-3xl ml-3">Hero Centered Header
+       <p> A large section at the top of the homepage of our brand logo. Meant to capture the attention of our clients with a bold logo and large text.
+    </p>
+
+
+      <section class=" mb-8">
+        <div class="grid grid-cols-2 gap-1" >
+            <div class="w-full p-4 lg:w-100">
+              <img src="../images/starair.png" class="w-50 h-3/4" alt="Star Air Logo">
+              </div>
+              <div  >
+                <pre>
+              <strong>CSS</strong>
+              .hero-centered {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  text-align: center;
+                  padding: 20px;
+                  color: #ffffff;
+              }
+              .hero-centered .content {
+                  padding: 20px;
+                  margin-top: -100px;
+                  background-color: #ffffff;
+              }
+                </pre>
+              </div>
+              
+      </section>
+
+      <section class="grid grid-cols-4 gap-x-5 p-4 ">
+        <!-- Sidebar Navigation Section -->
+        <div class="stylebox text-white bg-blue-700 p-4 h-64 flex flex-col   ">
+          <div class="text-3xl font-bold mb-2">Sidebar Navigation</div>
+          <p>Sidebar navigation on the left side facilitating vertical scanning and improving comprehension speed.</p>
+        </div>
+        
+        <!-- Buttons Section -->
+        <div class=" p-4 ">
+          <div class="grid gap-y-4">
+            <button class="border-2 border-double sidebar-navigation-button p-2 rounded">book a flight</button>
+            <button class="border-2 border-double sidebar-navigation-button p-2 rounded">cancel a flight</button>
+            <button class="border-2 border-double sidebar-navigation-button p-2 rounded">weather update</button>
+            <button class="border-2 border-double sidebar-navigation-button p-2 rounded">airtravel safety</button>
+            <button class="border-2 border-double sidebar-navigation-button p-2 rounded">service animals</button>
+          </div>
+        </div>
+        
+        <!-- Code Snippet Section -->
+         <div class="mr-20">
+         
+
+            <pre>
+                <strong>HTML</strong>
+              &lt;!-- Buttons Section --&gt;
+              &lt;div class="border-2 border-gray-600 p-4 rounded-lg"&gt;
+                &lt;div class="grid gap-y-4"&gt;
+                  &lt;button class="border-2 border-double sidebar-navigation-button p-2 rounded"&gt;book a flight&lt;/button&gt;
+                  &lt;button class="border-2 border-double sidebar-navigation-button p-2 rounded"&gt;cancel a flight&lt;/button&gt;
+                  &lt;button class="border-2 border-double sidebar-navigation-button p-2 rounded"&gt;weather update&lt;/button&gt;
+                  &lt;button class="border-2 border-double sidebar-navigation-button p-2 rounded"&gt;airtravel safety&lt;/button&gt;
+                  &lt;button class="border-2 border-double sidebar-navigation-button p-2 rounded"&gt;service animals&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </pre>
+   
+          
+            <pre>
+                <strong>CSS</strong>
+              .sidebar-navigation-button {
+                padding: 0.8rem;
+                background-color: #FF7F50;
+                color: #f3f3f3;
+                text-shadow: 1px 1px 1px black;
+                border-radius: 3rem;
+              }
+          
+              .sidebar-navigation-button:hover {
+                background-color: #ff7f5083;
+              }
+            </pre>
+        </div>
+      </section>
+      
+      
+ 
+
+        <h3 class="text-3xl">Card Grid Layout
+        </h3>
+        <p>Facilitate users to attain critical information with a simple card grid layout. Card grid layouts allow users to quickly visualize statistics in a  rapid manner.</p>
+    
+<div class="grid grid-cols-4 grid-x-1">
+    <div class="w-full p-4 lg:w-70">
+        <div class="p-8 bg-white rounded shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
+            <p class="text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+                deserunt
+                quas repellat facere dolor blanditiis tenetur quibusdam corporis quaerat. Impedit,
+                repellendus!
+                Delectus et illum eum ipsa magni? Facilis, molestiae est!</p>
+        </div>
+    </div>
+    <div class="w-full p-4 lg:w-70">
+        <div class="p-8 bg-white rounded shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
+            <p class="text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+                deserunt
+                quas repellat facere dolor blanditiis tenetur quibusdam corporis quaerat. Impedit,
+                repellendus!
+                Delectus et illum eum ipsa magni? Facilis, molestiae est!</p>
+        </div>
+    </div>
+    <div class="w-full p-4 lg:w-70">
+        <div class="p-8 bg-white rounded shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
+            <p class="text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+                deserunt
+                quas repellat facere dolor blanditiis tenetur quibusdam corporis quaerat. Impedit,
+                repellendus!
+                Delectus et illum eum ipsa magni? Facilis, molestiae est!</p>
+        </div>
+    </div>
+    <div class="w-full p-4 lg:w-70">
+        <div class="p-8 bg-white rounded shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
+            <p class="text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+                deserunt
+                quas repellat facere dolor blanditiis tenetur quibusdam corporis quaerat. Impedit,
+                repellendus!
+                Delectus et illum eum ipsa magni? Facilis, molestiae est!</p>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+  </div>
 </body>
 </html>
