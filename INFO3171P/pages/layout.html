@@ -7,17 +7,17 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <title>Page Layouts | Star Air</title>
   <style>
-    pre{
+    pre, code {
         font-size:small;
+        color:#000000;
     }
-    .hero-centered .hero {
+    .hero-centered {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       padding: 20px;
-      background-color: #f58634;
-      color: #ffffff;
+      color: #000000;
     }
     .hero-centered .content {
       padding: 20px;
@@ -51,8 +51,9 @@
     .stylebox{
       padding:0.8rem;
       background-color: #008970;
-      width:80%;
+      width:102%;
       height:50%;
+      font-size:medium;
       justify-content: center;
    
     }
@@ -103,26 +104,41 @@
     <div class="pageContent flex flex-col w-3/4 h-full p-5">
       <div class="text-4xl ml-3 mb-5">Page Layouts
 
-
       <p>Layout Style: <strong> Dashboard with a Sidebar Navigation with a Hero-Centered Header</strong></p>
+ 
+        <h1 class="text-5xl">Star Air Pattern Library - Page Layouts</h1>
         </div>
 
 
       <div class=" text-3xl ml-3">Hero Centered Header
-       <p> A large section at the top of the homepage of our brand logo. to capture the attention of our clients.
+       <p> A large section at the top of the homepage of our brand logo. Meant to capture the attention of our clients with a bold logo and large text.
     </p>
 
-      <section class="hero-centered mb-8">
-        <div class="hero">
-          <h3 class="text-2xl">Hero-Centered Layout</h3>
-          <img src="../images/hero.jpg" alt="Sample Hero Image" class="w-full h-auto">
-        </div>
-        <div class="content">
-            <div class="text-3xl">Code</div>
-          <pre><code>
-            our code for this here
-          </code></pre>
-        </div>
+
+      <section class=" mb-8">
+        <div class="grid grid-cols-2 gap-1" >
+            <div class="w-full p-4 lg:w-100">
+              <img src="../images/starair.png" class="w-50 h-3/4" alt="Star Air Logo">
+              </div>
+              <div  >
+                <pre>
+              <strong>CSS</strong>
+              .hero-centered {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  text-align: center;
+                  padding: 20px;
+                  color: #ffffff;
+              }
+              .hero-centered .content {
+                  padding: 20px;
+                  margin-top: -100px;
+                  background-color: #ffffff;
+              }
+                </pre>
+              </div>
+              
       </section>
 
       <section class="grid grid-cols-4 gap-x-5 p-4 ">
@@ -177,8 +193,6 @@
               }
             </pre>
         </div>
-    
-          
       </section>
       
       
@@ -186,10 +200,10 @@
 
         <h3 class="text-3xl">Card Grid Layout
         </h3>
-        <p>Facilitate users to attain critical information with a simple card grid layout</p>
+        <p>Facilitate users to attain critical information with a simple card grid layout. Card grid layouts allow users to quickly visualize statistics in a  rapid manner.</p>
     
 <div class="grid grid-cols-4 grid-x-1">
-    <div class="w-full p-4 lg:w-80">
+    <div class="w-full p-4 lg:w-70">
         <div class="p-8 bg-white rounded shadow-md">
             <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
             <p class="text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
@@ -199,7 +213,7 @@
                 Delectus et illum eum ipsa magni? Facilis, molestiae est!</p>
         </div>
     </div>
-    <div class="w-full p-4 lg:w-80">
+    <div class="w-full p-4 lg:w-70">
         <div class="p-8 bg-white rounded shadow-md">
             <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
             <p class="text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
@@ -209,7 +223,7 @@
                 Delectus et illum eum ipsa magni? Facilis, molestiae est!</p>
         </div>
     </div>
-    <div class="w-full p-4 lg:w-80">
+    <div class="w-full p-4 lg:w-70">
         <div class="p-8 bg-white rounded shadow-md">
             <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
             <p class="text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
@@ -219,7 +233,7 @@
                 Delectus et illum eum ipsa magni? Facilis, molestiae est!</p>
         </div>
     </div>
-    <div class="w-full p-4 lg:w-80">
+    <div class="w-full p-4 lg:w-70">
         <div class="p-8 bg-white rounded shadow-md">
             <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
             <p class="text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
