@@ -4,36 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
     <title>Buttons | Star Air</title>
 </head>
 <body class="h-screen">
-        <!--Header Image-->
-        <div class="bg-[#BBA79C] bg-opacity-20 flex flex-col justify-center items-center w-full h-96 p-5 pt-8">
-            <img src="../images/starair.png" class="w-1/4 h-3/4">
-            <h1 class="text-5xl">Star Air Pattern Library</h1>
-        </div>
-    
-        <div class="sideContentContainer grid grid-cols-6">
-    
-        <div class="sideContentContainer flex h-full">
-         <!--Sidebar-->
-         <div class="bg-[#008970] bg-opacity-30 flex flex-col rounded-lg p-5 shadow gap-y-5">
+    <!--Header Image-->
+    <div class="bg-[#BBA79C] bg-opacity-20 flex flex-col justify-center items-center w-full h-96 p-5 pt-8">
+        <img src="../images/starair.png" class="w-1/4 h-3/4">
+        <h1 class="text-5xl">Star Air Pattern Library</h1>
+    </div>
+
+    <div class="sideContentContainer grid grid-cols-6">
+        <div></div>
+        <!--Sidebar-->
+        <div class="bg-[#008970] bg-opacity-30 flex flex-col rounded-lg p-5 shadow gap-y-5">
             <p class="border-b-2 border-b-black font-semibold">Basics</p>
             <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
-                <a href="../index.html" class="sidebar-link">Colour</a>
+                <a href="./colour.html" class="sidebar-link">Colour</a>
                 <a href="./layout.html" class="sidebar-link">Layout</a>
                 <a href="./typography.html" class="sidebar-link">Typography</a>
                 <a href="./dataVisualization.html" class="sidebar-link">Data Visualization</a>
             </div>
             <p class="border-b-2 border-b-black font-semibold">Components</p>
             <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
-                <a href="./queryHero.html" class="sidebar-link">Query Hero</a>
+                <a href="./queryHero.html" class="sidebar-link">Query Header</a>
                 <a href="./destCards.html" class="sidebar-link">Offer Cards</a>
                 <a href="./navigation.html" class="sidebar-link">Navigation</a>
                 <a href="./buttons.html" class="sidebar-link">Buttons</a>
                 <a href="./selections.html" class="sidebar-link">Time/Place Selection</a>
                 <a href="./feedback.html" class="sidebar-link">Feedback</a>
+                <a href="./icons.html" class="sidebar-link">Icons</a>
+
             </div>
         </div>
+
+        <!-- Page Content -->
+        <div class="pageContent col-span-3 p-5 flex flex-col gap-y-5">
+            <h2 class="text-4xl">Buttons for Data Dashboard</h2>
+            <p>Buttons on the data dashboard should serve clear purposes, enabling users to quickly perform actions. Below are the various button types used in the Star Air dashboard, categorized by function and state.</p>
+
+            <!-- Priority Buttons Section -->
+            <section class="flex flex-col gap-y-5">
+                <h3 class="text-2xl">Priority Buttons</h3>
+                <p>These buttons indicate different levels of action priority, such as primary actions, warnings, and general actions. They help users navigate the dashboard based on task importance.</p>
+
+                <!-- Example of Priority Buttons -->
+                <button class="button primary margin-bottom--lv3">Primary Action</button>
+                <button class="button secondary margin-bottom--lv3">Secondary Action</button>
+                <button class="button warning margin-bottom--lv3">Warning Action</button>
+
+                <h4 class="text-lg">Usage</h4>
+                <p>Use the `<button>` tag to create these buttons, assigning classes like <code>primary</code>, <code>secondary</code>, or <code>warning</code> depending on the action’s significance.</p>
+            </section>
+
+            <!-- Disabled Buttons Section -->
+            <section class="flex flex-col gap-y-5">
+                <h3 class="text-2xl">Disabled Buttons</h3>
+                <p>Disabled buttons are used when an action is not yet available or the user is not authorized to perform it. These buttons have a grayed-out appearance and cannot be interacted with.</p>
+
+                <!-- Example of Disabled Buttons -->
+                <button class="button primary margin-bottom--lv3" disabled>Primary Disabled</button>
+                <button class="button secondary margin-bottom--lv3" disabled>Secondary Disabled</button>
+                <button class="button warning margin-bottom--lv3" disabled>Warning Disabled</button>
+
+                <h4 class="text-lg">Usage</h4>
+                <p>Apply the <code>disabled</code> attribute directly to the button tag to indicate that the button is inactive. Disabled buttons are useful for guiding users on which actions are available.</p>
+            </section>
+
+            <!-- Loading Buttons Section -->
+            <section class="flex flex-col gap-y-5">
+                <h3 class="text-2xl">Loading Buttons</h3>
+                <p>These buttons are displayed when the system is processing a request. They provide feedback to the user, indicating that an action is in progress.</p>
+
+                <!-- Example of Loading Buttons -->
+                <button class="button primary button-loading margin-bottom--lv3" disabled>Loading...</button>
+                <button class="button secondary button-loading margin-bottom--lv3" disabled>Loading...</button>
+                <button class="button warning button-loading margin-bottom--lv3" disabled>Loading...</button>
+
+                <h4 class="text-lg">Usage</h4>
+                <p>Toggle the class <code>button-loading</code> dynamically when a request starts, and remove it once the process completes. Use these for actions that may take time, such as data retrieval or submission.</p>
+            </section>
+
+            <!-- Buttons with Icons Section -->
+            <section class="flex flex-col gap-y-5">
+                <h3 class="text-2xl">Buttons with Icons</h3>
+                <p>Buttons paired with icons enhance user experience by adding visual cues. These are especially useful for repetitive actions like saving, editing, or deleting data.</p>
+
+                <!-- Example of Buttons with Icons -->
+                <button class="button primary margin-bottom--lv3">
+                    <span class="icon-save"></span> Save
+                </button>
+                <button class="button secondary margin-bottom--lv3">
+                    <span class="icon-edit"></span> Edit
+                </button>
+                <button class="button warning margin-bottom--lv3">
+                    <span class="icon-trash"></span> Delete
+                </button>
+
+                <h4 class="text-lg">Usage</h4>
+                <p>Use icon classes like <code>icon-save</code>, <code>icon-edit</code>, and <code>icon-trash</code> inside the button tag to add icons before the text. Ensure that these icons have enough space and are visually aligned with the button text.</p>
+            </section>
+
+            <!-- Pagination Buttons Section -->
+            <section class="flex flex-col gap-y-5">
+                <h3 class="text-2xl">Pagination Buttons</h3>
+                <p>Pagination buttons help users navigate through large sets of data, such as tables or reports. These are typically used for previous and next navigation.</p>
+
+                <!-- Example of Pagination Buttons -->
+                <div class="button-group">
+                    <button class="button disabled" aria-label="Previous" role="button"><span class="icon-arrow-left"></span> Previous</button>
+                    <button class="button" role="button">Next <span class="icon-arrow-right"></span></button>
+                </div>
+
+                <h4 class="text-lg">Usage</h4>
+                <p>Wrap multiple pagination buttons inside a <code>button-group</code> container. Use icons like <code>icon-arrow-left</code> and <code>icon-arrow-right</code> to visually distinguish navigation direction.</p>
+            </section>
+
+        </div>
+    </div>
 </body>
 </html>
