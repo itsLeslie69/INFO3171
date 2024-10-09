@@ -25,6 +25,10 @@ h4 {
     font-size: 1.5rem
 }
 
+p.alert-p-content {
+    font-size: 0.8rem;
+}
+
 p, a {
     font-size: 1rem;
 }
@@ -45,14 +49,44 @@ tr {
     padding: 5%;
 }
 
+.color-circle {
+    width: 2rem; /* Width of the circle */
+    height: 2rem; /* Height of the circle */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 2px; /* Space between circle and text */
+    margin-bottom: 1.2rem;
+  }
+
 .sidebar-link:hover {
-    background-color: #0089704C;   
+    background-color: #83ABD0FF;   
 }
 
 .body-nav-text:hover {
-    color: #00C0A34C;  
+    color: #83ABD0E5;  
 }
 
 .offer-button:hover {
     color: #54433AE5;
+}
+
+
+
+.data-table td {
+    text-align: center;
+}
+
+.data-table th  {
+    padding: 4%
+}
+
+.data-table td:hover {
+    background-color: color-mix(in srgb, currentColor 25%, transparent);
+}
+
+p.data-increase {
+    color: #28A745;
+}
+
+p.data-decrease {
+    color: #BD0202;
 }
