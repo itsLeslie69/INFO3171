@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="../src/output.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Navigation | Star Air</title>
+    <style>
+        .tab-code {
+            background-color: #36454F;
+            opacity: 0.7;
+            overflow-x: auto;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+            color: white;
+        }
+
+        .section {
+            background-color: rgba(211, 211, 211, 0.7);
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 
 <body class="bg-[#F5F5DC]">
@@ -43,20 +62,27 @@
             <h2 class="text-4xl">Navigation Structure</h2>
             <p>This section describes the navigation structure within the application, detailing the purpose and usage of each navigation element.</p>
 
-            <!-- Overview Section -->
-            <section class="flex flex-col gap-y-5 bg-[#D3D3D3] bg-opacity-70 p-5 rounded-lg shadow-md">
-                <h3 class="text-2xl">Overview</h3>
-                <p>The navigation menu allows users to easily access different sections of the application. It is designed to be intuitive and user-friendly.</p>
-            </section>
-            <div class="tab-content mt-2 bg-[#36454F] bg-opacity-70 overflow-x-auto">
-                <code>
-&lt;section class="flex flex-col gap-y-5 bg-[#D3D3D3] bg-opacity-70 p-5 rounded-lg shadow-md"&gt;<br>
-&nbsp;&nbsp;&lt;h3 class="text-2xl"&gt;Overview&lt;/h3&gt;<br>
-                </code>
+            <!-- Navigation Links -->
+            <div class="flex space-x-4 mb-4">
+                <a href="#overview" class="tab-button bg-[#D3D3D3] p-2 rounded-md">Overview</a>
+                <a href="#local-navigation" class="tab-button bg-[#D3D3D3] p-2 rounded-md">Local Navigation</a>
+                <a href="#dropdown-navigation" class="tab-button bg-[#D3D3D3] p-2 rounded-md">Dropdown Navigation</a>
             </div>
 
+            <!-- Overview Section -->
+            <section id="overview" class="section">
+                <h3 class="text-2xl">Overview</h3>
+                <p>The navigation menu allows users to easily access different sections of the application. It is designed to be intuitive and user-friendly.</p>
+                <div class="tab-code mt-2">
+                    <code>
+&lt;section class="flex flex-col gap-y-5"&gt;<br>
+&nbsp;&nbsp;&lt;h3 class="text-2xl"&gt;Overview&lt;/h3&gt;<br>
+                    </code>
+                </div>
+            </section>
+
             <!-- Local Navigation Section -->
-            <section class="flex flex-col gap-y-5 bg-[#D3D3D3] bg-opacity-70 p-5 rounded-lg shadow-md">
+            <section id="local-navigation" class="section">
                 <h3 class="text-2xl">Local Navigation</h3>
                 <p>Local navigation is used for jumping between related pages. For example, the account section includes links to Overview, Settings, and Billing.</p>
 
@@ -67,9 +93,8 @@
                     <a href="#/account/integrations" class="text-[#36454F] hover:underline">Integrations</a>
                 </nav>
                 <p>Local navigation is present on all pages under /account and indicates the currently viewed section in the specified color.</p>
-            </section>
-            <div class="tab-content mt-2 bg-[#36454F] bg-opacity-70 overflow-x-auto">
-                <code>
+                <div class="tab-code mt-2">
+                    <code>
 &lt;nav class="flex flex-col gap-y-5"&gt;<br>
 &nbsp;&nbsp;&lt;h3&gt;Overview&lt;/h3&gt;<br>
 &nbsp;&nbsp;&lt;ul&gt;<br>
@@ -79,11 +104,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#/account/integrations"&gt;Integrations&lt;/a&gt;&lt;/li&gt;<br>
 &nbsp;&nbsp;&lt;/ul&gt;<br>
 &lt;/nav&gt;
-                </code>
-            </div>
+                    </code>
+                </div>
+            </section>
 
             <!-- Dropdown Navigation Section -->
-            <section class="flex flex-col gap-y-5 bg-[#D3D3D3] bg-opacity-70 p-5 rounded-lg shadow-md">
+            <section id="dropdown-navigation" class="section">
                 <h3 class="text-2xl">Dropdown Navigation</h3>
                 <p>Dropdown menus are useful for organizing sub-sections under a main category. Click to reveal more options.</p>
 
@@ -102,36 +128,27 @@
                             <a href="#/account/users" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Users</a>
                             <a href="#/account/contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact Info</a>
                             <a href="#/account/data" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Manage Data</a>
-                            <a href="#/account/close" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Close Account</a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <div class="tab-content mt-2 bg-[#36454F] bg-opacity-70 overflow-x-auto">
-                <code>
+                <div class="tab-code mt-2">
+                    <code>
 &lt;div class="relative inline-block text-left"&gt;<br>
-&nbsp;&nbsp;&lt;button class="inline-flex justify-center w-full"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Account<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;svg&gt;&lt;/svg&gt; <!-- SVG Icon --><br>
-&nbsp;&nbsp;&lt;/button&gt;<br>
-&nbsp;&nbsp;&lt;div class="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white hidden"&gt;<br>
+&nbsp;&nbsp;&lt;button class="inline-flex justify-center w-full rounded-md"&gt;Account&lt;/button&gt;<br>
+&nbsp;&nbsp;&lt;div class="dropdown-content"&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#/account/users"&gt;Users&lt;/a&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#/account/contact"&gt;Contact Info&lt;/a&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#/account/data"&gt;Manage Data&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#/account/close"&gt;Close Account&lt;/a&gt;<br>
 &nbsp;&nbsp;&lt;/div&gt;<br>
 &lt;/div&gt;
-                </code>
-            </div>
+                    </code>
+                </div>
+            </section>
         </div>
-    </div>
 
-    <script>
-        document.getElementById('dropdown-button').addEventListener('click', function () {
-            const menu = document.getElementById('dropdown-menu');
-            menu.classList.toggle('hidden');
-        });
-    </script>
+        <!-- Right Sidebar -->
+        <div></div>
+    </div>
 </body>
 
 </html>
