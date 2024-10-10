@@ -40,86 +40,132 @@
             <p class="mb-5">Buttons on the data dashboard should serve clear purposes, enabling users to quickly perform actions. Below are the various button types used in the Star Air dashboard, categorized by function and state.</p>
 
             <!-- Priority Buttons Section -->
-            <section class="my-10">
+            <section class="my-10 bg-[#D3D3D3] p-5 rounded">
                 <h3 class="text-2xl font-semibold mb-3">Priority Buttons</h3>
                 <p class="mb-4">These buttons indicate different levels of action priority, such as primary actions, warnings, and general actions. They help users navigate the dashboard based on task importance.</p>
 
                 <!-- Priority Buttons -->
-                <button class="bg-[#F58634] text-white font-bold py-2 px-4 rounded hover:bg-[#e5752b] mb-3">Primary Action</button>
-                <button class="bg-[#54433A] text-white font-bold py-2 px-4 rounded hover:bg-[#43362d] mb-3">Secondary Action</button>
-                <button class="bg-[#BBA79C] text-white font-bold py-2 px-4 rounded hover:bg-[#a6958b] mb-3">Tertiary Action</button>
+                <button class="bg-[#28A745] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#22963d] transition duration-200 ease-in-out transform hover:scale-105 mb-3 cursor-pointer">Success</button>
+                <button class="bg-[#F4C96B] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#e3b55a] transition duration-200 ease-in-out transform hover:scale-105 mb-3 cursor-pointer">Warning</button>
+                <button class="bg-[#BD0202] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#9d0202] transition duration-200 ease-in-out transform hover:scale-105 mb-3 cursor-pointer">Error</button>
+                <button class="bg-[#83ABD0] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#6a9bbf] transition duration-200 ease-in-out transform hover:scale-105 mb-3 cursor-pointer">Information</button>
+
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code>&lt;button class="bg-[#28A745] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#22963d] transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer"&gt;Success&lt;/button&gt;
+&lt;button class="bg-[#F4C96B] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#e3b55a] transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer"&gt;Warning&lt;/button&gt;
+&lt;button class="bg-[#BD0202] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#9d0202] transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer"&gt;Error&lt;/button&gt;
+&lt;button class="bg-[#83ABD0] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#6a9bbf] transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer"&gt;Information&lt;/button&gt;</code></pre>
+                </div>
             </section>
 
             <!-- Disabled Buttons Section -->
-            <section class="my-10">
+            <section class="my-10 bg-[#D3D3D3] p-5 rounded">
                 <h3 class="text-2xl font-semibold mb-3">Disabled Buttons</h3>
                 <p class="mb-4">Disabled buttons are used when an action is not yet available or the user is not authorized to perform it.</p>
 
                 <!-- Disabled Buttons -->
-                <button class="bg-[#F58634] text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed mb-3" disabled>Primary Disabled</button>
-                <button class="bg-[#54433A] text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed mb-3" disabled>Secondary Disabled</button>
-                <button class="bg-[#BBA79C] text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed mb-3" disabled>Tertiary Disabled</button>
+                <button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed mb-3" disabled>Primary Disabled</button>
+                <button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed mb-3" disabled>Secondary Disabled</button>
+                <button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed mb-3" disabled>Tertiary Disabled</button>
+
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code>&lt;button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed" disabled&gt;Primary Disabled&lt;/button&gt;
+&lt;button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed" disabled&gt;Secondary Disabled&lt;/button&gt;
+&lt;button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed" disabled&gt;Tertiary Disabled&lt;/button&gt;</code></pre>
+                </div>
             </section>
 
             <!-- Loading Buttons Section -->
-            <section class="my-10">
+            <section class="my-10 bg-[#D3D3D3] p-5 rounded">
                 <h3 class="text-2xl font-semibold mb-3">Loading Buttons</h3>
                 <p class="mb-4">These buttons are displayed when the system is processing a request.</p>
 
                 <!-- Loading Button -->
-                <button class="bg-[#00C0A3] text-white font-bold py-2 px-4 rounded flex items-center gap-2 cursor-not-allowed mb-3" disabled>
+                <button class="bg-[#008970] text-white font-bold py-3 px-6 rounded flex items-center gap-2 cursor-not-allowed mb-3 shadow-lg transition duration-200 ease-in-out transform hover:scale-105" disabled>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" />
                     </svg>
                     Loading...
                 </button>
+
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code>&lt;button class="bg-[#008970] text-white font-bold py-3 px-6 rounded flex items-center gap-2 cursor-not-allowed" disabled&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" /&gt;
+    &lt;/svg&gt;
+    Loading...
+&lt;/button&gt;</code></pre>
+                </div>
             </section>
 
             <!-- Buttons with Icons Section -->
-            <section class="my-10">
+            <section class="my-10 bg-[#D3D3D3] p-5 rounded">
                 <h3 class="text-2xl font-semibold mb-3">Buttons with Icons</h3>
                 <p class="mb-4">Buttons paired with icons enhance user experience by adding visual cues. These are especially useful for repetitive actions like saving, editing, or deleting data.</p>
 
                 <!-- Buttons with Icons -->
-                <button class="bg-[#54433A] text-white font-bold py-2 px-4 rounded flex items-center gap-2 mb-3">
+                <button class="bg-[#28A745] text-white font-bold py-3 px-6 rounded flex items-center gap-2 cursor-not-allowed mb-3 shadow-lg transition duration-200 ease-in-out transform hover:scale-105">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" />
                     </svg>
                     Save
                 </button>
-                <button class="bg-[#BBA79C] text-white font-bold py-2 px-4 rounded flex items-center gap-2 mb-3">
+                <button class="bg-[#F4C96B] text-white font-bold py-3 px-6 rounded flex items-center gap-2 cursor-not-allowed mb-3 shadow-lg transition duration-200 ease-in-out transform hover:scale-105">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m0 0l3-3m-3 3l3 3" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" />
                     </svg>
                     Edit
                 </button>
-                <button class="bg-[#F58634] text-white font-bold py-2 px-4 rounded flex items-center gap-2 mb-3">
+                <button class="bg-[#BD0202] text-white font-bold py-3 px-6 rounded flex items-center gap-2 cursor-not-allowed mb-3 shadow-lg transition duration-200 ease-in-out transform hover:scale-105">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" />
                     </svg>
                     Delete
                 </button>
+
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code>&lt;button class="bg-[#28A745] text-white font-bold py-3 px-6 rounded flex items-center gap-2"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"&gt;
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" /&gt;
+    &lt;/svg&gt;
+    Save
+&lt;/button&gt;
+&lt;button class="bg-[#F4C96B] text-white font-bold py-3 px-6 rounded flex items-center gap-2"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"&gt;
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" /&gt;
+    &lt;/svg&gt;
+    Edit
+&lt;/button&gt;
+&lt;button class="bg-[#BD0202] text-white font-bold py-3 px-6 rounded flex items-center gap-2"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"&gt;
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" /&gt;
+    &lt;/svg&gt;
+    Delete
+&lt;/button&gt;</code></pre>
+                </div>
             </section>
 
             <!-- Pagination Buttons Section -->
-            <section class="my-10">
+            <section class="my-10 bg-[#D3D3D3] p-5 rounded">
                 <h3 class="text-2xl font-semibold mb-3">Pagination Buttons</h3>
                 <p class="mb-4">Pagination buttons help users navigate through large sets of data, such as tables or reports.</p>
 
                 <!-- Pagination Buttons -->
-                <div class="flex space-x-2">
-                    <button class="bg-[#54433A] text-white font-bold py-2 px-4 rounded flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
-                        Previous
-                    </button>
-                    <button class="bg-[#00C0A3] text-white font-bold py-2 px-4 rounded flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                        Next
-                    </button>
+                <div class="flex space-x-4 ">
+                    <button class="bg-[#483C32] text-white font-bold py-4 px-8 rounded flex items-center gap-2 shadow-lg hover:bg-opacity-70 transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer">Previous</button>
+                    <button class="bg-[#BBA79C] text-white font-bold py-4 px-8 rounded flex items-center gap-2 shadow-lg hover:bg-opacity-70 transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer">Next</button>
+                </div>
+
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code>&lt;div class="flex space-x-4"&gt;
+    &lt;button class="bg-[#483C32] text-white font-bold py-3 px-6 rounded"&gt;Previous&lt;/button&gt;
+    &lt;button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded"&gt;Next&lt;/button&gt;
+&lt;/div&gt;</code></pre>
                 </div>
             </section>
         </div>
