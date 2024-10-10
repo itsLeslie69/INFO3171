@@ -35,11 +35,15 @@
             </div>
         </div>
         <!-- Page Content -->
-        <div class="pageContent col-span-3 p-5 flex flex-col gap-y-5 ">
-            <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70">
-            <h2 class="text-4xl">Data Visualization</h2>
-            <p>Data is one of the core drivers for decision-making at Star Air. Therefore, it’s essential that our visualizations are clear, impactful, and designed to convey the right information at a glance. Here we outline the principles and styling guidelines that will ensure consistent and effective data presentation.</p>
-        </div>
+        <div class="pageContent col-span-3 ml-5 flex flex-col gap-y-5 ">
+            <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70 flex flex-col gap-y-5">
+                <h2 class="text-4xl">Data Visualization</h2>
+                <p>
+                    Data is one of the core drivers for decision-making at Star Air. 
+                    Therefore, it’s essential that our visualizations are clear, impactful, and designed to convey the right information at a glance. 
+                    Here we outline the principles and styling guidelines that will ensure consistent and effective data presentation.
+                </p>
+            </div>
             <!-- Page Nav -->
             <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70">
             <ul class="flex gap-x-4 p-5 w-full">
@@ -124,7 +128,7 @@
 
             <!-- Grids Section -->
             <section id="grids-section" class="flex flex-col gap-y-5">
-                <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70">
+                <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70 flex flex-col gap-y-5">
                     <h3 class="text-2xl">Grid Systems</h3>
                     <p>Grid systems help maintain structure across our visualizations. Use a 12-column grid for layouts and align elements consistently for a cleaner appearance.</p>
                     
@@ -144,11 +148,9 @@
                 </div>
             </section>
             
-            
-
             <!-- Fly-over Section -->
             <section id="flyover-section" class="flex flex-col gap-y-5">
-                <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70">
+                <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70 flex flex-col gap-y-5">
                     <h3 class="text-2xl">Fly-over Effects</h3>
                     <p>Implement fly-over effects to enhance user engagement. These should be subtle and not distracting, helping to provide additional context or data when necessary.</p>
                     
@@ -164,15 +166,14 @@
                     <h4 class="text-xl mt-4">Example Implementation:</h4>
                     <p>For a line chart, when a user hovers over a data point, a tooltip could appear showing the exact value and date. This feature provides users with quick insights without overwhelming them with too much information.</p>
                     
-                 <!-- Visual Example -->
-                <div class="mt-4">
-                    <h4 class="text-lg font-semibold">Visual Example:</h4>
-                    <img src="../images/flyover.png" alt="Fly-over Effects Example" class="w-1/2 h-auto rounded-lg"> <!-- Change w-full to w-1/2 -->
-                    <p class="mt-2">This example illustrates a tooltip that appears when hovering over a data point in a line chart, providing additional context without cluttering the main visual.</p>
-                </div>
+                    <!-- Visual Example -->
+                    <div class="mt-4 flex flex-col gap-y-5">
+                        <h4 class="text-lg font-semibold">Visual Example:</h4>
+                        <img src="../images/flyover.png" alt="Fly-over Effects Example" class="w-1/2 h-auto rounded-lg"> <!-- Change w-full to w-1/2 -->
+                        <p class="mt-2">This example illustrates a tooltip that appears when hovering over a data point in a line chart, providing additional context without cluttering the main visual.</p>
+                    </div>
                 </div>
             </section>
-            
         </div>
     </div>
 </body>

@@ -40,15 +40,21 @@
             <!--Page Nav-->
             <ul class="bg-[#D3D3D3] bg-opacity-70 rounded-lg flex gap-x-4 p-5 w-full">
                 <li>
-                    <a href="#" class="body-nav-text font-semibold">Banners</a>
+                    <a href="#banners" class="body-nav-text font-semibold">Banners</a>
                 </li>
                 <li>
-                    <a href="#" class="body-nav-text font-semibold">Code</a>
+                    <a href="#page-code" class="body-nav-text font-semibold">Code</a>
                 </li>
             </ul>
             <section class="bg-[#D3D3D3] bg-opacity-70 p-5 flex flex-col gap-y-5 rounded-lg">
-                <h3>Feedback Banners</h3>
+                <h3 id="banners">Feedback Banners</h3>
+                <p>
+                    Feedback banners will be displayed to the user upon the sucess - or failure - of a given action.
+                    They may also see them when something might go wrong or when some context might be needed to use
+                    the menu more efficiently.
+                </p>
                 <div class="flex flex-col gap-y-5">
+                    <!--Banner Separator-->
                     <div class="bg-[#28A745] bg-opacity-30 flex justify-start items-center rounded-lg p-5 shadow gap-y-5 gap-x-5">
                         <svg class="h-8 w-8 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -58,6 +64,7 @@
                             <p class="alert-p-content">Everything is OK!</p>
                         </div>
                     </div>
+                    <!--Banner Separator-->
                     <div class="bg-[#BD0202] bg-opacity-30 flex justify-start items-center rounded-lg p-5 shadow gap-y-5 gap-x-5">
                         <svg class="h-8 w-8 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -68,6 +75,7 @@
                             <p class="alert-p-content">Something went wrong!</p>
                         </div>
                     </div>
+                    <!--Banner Separator-->
                     <div class="bg-[#F4C96B] bg-opacity-30 flex justify-start items-center rounded-lg p-5 shadow gap-y-5 gap-x-5">
                         <svg class="h-8 w-8 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="9" />  <line x1="9" y1="12" x2="15" y2="12" />
                         </svg>
@@ -76,6 +84,7 @@
                             <p class="alert-p-content">Alert - delays detected!</p>
                         </div>
                     </div>
+                    <!--Banner Separator-->
                     <div class="bg-[#83ABD0] bg-opacity-30 flex justify-start items-center rounded-lg p-5 shadow gap-y-5 gap-x-5">
                         <svg class="h-8 w-8 text-black"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" />
                         </svg>
@@ -89,7 +98,7 @@
             <!--Code-->
             <hr>
             <section class="bg-[#D3D3D3] bg-opacity-70 flex flex-col gap-y-5 p-5">
-                <h3>Code</h3>
+                <h3 id="page-code">Code</h3>
                 <!--Message One-->
                 <h4>Success</h4>
                 <div class="bg-[#36454F] rounded-lg  text-white overflow-x-auto">

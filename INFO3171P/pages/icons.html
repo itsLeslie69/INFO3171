@@ -32,39 +32,6 @@
             <a href="../pages/icons.html" class="sidebar-link">Icons</a>
             <a href="../pages/feedback.html" class="sidebar-link">Feedback</a>
         </div>
-        <!-- Color Squares in Sidebar -->
-        <div class="color-squares mt-8 flex flex-wrap gap-4">
-          <!-- Color 1 -->
-          <div
-            class="w-10 h-16"
-            style="background-color: #f58634"
-            title="#F58634"
-          ></div>
-          <!-- Color 2 -->
-          <div
-            class="w-10 h-16"
-            style="background-color: #54433a"
-            title="#54433A"
-          ></div>
-          <!-- Color 3 -->
-          <div
-            class="w-10 h-16"
-            style="background-color: #bba79c"
-            title="#BBA79C"
-          ></div>
-          <!-- Color 4 -->
-          <div
-            class="w-10 h-16"
-            style="background-color: #00c0a3"
-            title="#00C0A3"
-          ></div>
-          <!-- Color 5 -->
-          <div
-            class="w-10 h-16"
-            style="background-color: #008970"
-            title="#008970"
-          ></div>
-        </div>
     </div>
     <!--Page Content-->
     <div class="pageContent col-span-3 ml-5 flex flex-col gap-y-5">
@@ -72,15 +39,16 @@
         <!--Page Nav-->
         <ul class="flex gap-x-4 p-5 w-full bg-[#D3D3D3] bg-opacity-70 rounded-lg">
             <li>
-                <a href="#" class="body-nav-text font-semibold">Icons</a>
+                <a href="#icons" class="body-nav-text font-semibold">Icons</a>
             </li>
             <li>
-                <a href="#" class="body-nav-text font-semibold">Code</a>
+                <a href="#page-code" class="body-nav-text font-semibold">Code</a>
             </li>
         </ul>
         <section class="bg-[#D3D3D3] bg-opacity-70 rounded-lg p-5">
             <p>Several icons are used in the display of our data. A few of these are for notifications, but others are for the data itself.</p>
-            <div class="p-5 grid grid-cols-3 gap-y-5 gap-x-5">
+            <div id="icons" class="p-5 grid grid-cols-3 gap-y-5 gap-x-5">
+                
                 <h3>↑</h3>
                 <p>Implements <code>.data-increase</code> helper class.</p>
                 <p>Used to indicate a positive data trend.</p>
@@ -92,24 +60,24 @@
                 <h3>←</h3>
                 <p>Implements <code>.data-neutral</code> helper class.</p>
                 <p>Used to indicate the absence of a trend or change.</p>
-    
+                <!--Icon Separator-->
                 <svg class="h-8 w-8 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
                 <p>SVG implemented via <code>path</code> element inside.</p>
                 <p>Indicates success, used in conjunction with a green banner.</p>
-    
+                <!--Icon Separator-->
                 <svg class="h-8 w-8 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
                 <p>SVG implemented via <code>path</code> element inside.</p>
                 <p>Shows an error with its accompanying red banner.</p>
-    
+                <!--Icon Separator-->
                 <svg class="h-8 w-8 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="9" />  <line x1="9" y1="12" x2="15" y2="12" />
                 </svg>
                 <p>SVG implemented via <code>path</code> element inside.</p>
                 <p>Serves as a warning to capture attention. Banner colour is yellow.</p>
-    
+                <!--Icon Separator-->
                 <svg class="h-8 w-8 text-black"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="12" y1="16" x2="12" y2="12" />  <line x1="12" y1="8" x2="12.01" y2="8" />
                 </svg>
                 <p>SVG implemented via <code>path</code> element inside.</p>
@@ -118,7 +86,7 @@
             </section>
             <hr>
             <section class="bg-[#D3D3D3] bg-opacity-70 rounded-lg p-5 flex flex-col gap-y-5">
-                <h3>Code</h3>
+                <h3 id="page-code">Code</h3>
                 <!--Icon One-->
                 <h4>Success</h4>
                 <div class="bg-[#36454F] rounded-lg  text-white overflow-x-auto">

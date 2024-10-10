@@ -40,15 +40,19 @@
             <!--Page Nav-->
             <ul class="bg-[#D3D3D3] bg-opacity-70 rounded-lg flex gap-x-4 p-5 w-full">
                 <li>
-                    <a href="#" class="body-nav-text font-semibold">Tables</a>
+                    <a href="#data" class="body-nav-text font-semibold">Tables</a>
                 </li>
                 <li>
-                    <a href="#" class="body-nav-text font-semibold">Code</a>
+                    <a href="#page-code" class="body-nav-text font-semibold">Code</a>
                 </li>
             </ul>
             <section class="bg-[#D3D3D3] bg-opacity-70 p-5 flex flex-col gap-y-5">
-                <h3>Data</h3>
-                <p>Most of our data relies on relatively simple tables with styles that make them easy on the eyes - and brain.</p>
+                <h3 id="data">Data</h3>
+                <p>
+                    Most of our data relies on relatively simple tables with styles that make them easy on the eyes - and brain.
+                    Individual cells of data will be highlighted when hovered over and contain border-bottom styling that ensures
+                    the reader does not get lost while reading relevant rows.
+                </p>
                <div class="flex justify-center">
                 <table class="data-table table-auto w-[80%] [&>tbody>*:nth-child(odd)]:bg-white [&>tbody>*:nth-child(even)]:bg-gray-300 border-5 black border-solid rounded-lg">
                     <thead class="bg-[#83ABD0]">
@@ -83,11 +87,9 @@
                </div>
             <!--Code-->
             <hr>
-
-              
             </section>
             <section class="flex flex-col gap-y-5 bg-[#D3D3D3] bg-opacity-70 p-5">
-                <h3>Code</h3>
+                <h3 id="page-code">Code</h3>
                 <h4>Success</h4>
                 <div class="bg-[#36454F] rounded-lg  text-white overflow-x-auto">
                     <pre class="p-5">

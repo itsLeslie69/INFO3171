@@ -16,31 +16,36 @@
     <div class="sideContentContainer grid grid-cols-6 mt-[2%]">
         <div></div>
         <!--Sidebar-->
-        <div class="bg-[#83ABD0] bg-opacity-90 flex flex-col rounded-lg p-5 shadow gap-y-5 col-span-2">
-            <p class="border-b-2 border-b-black font-semibold">Basics</p>
-            <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
-                <a href="../index.html" class="sidebar-link">Colour</a>
-                <a href="../pages/layout.html" class="sidebar-link">Layout</a>
-                <a href="../pages/typography.html" class="sidebar-link">Typography</a>
-                <a href="../pages/dataVis.html" class="sidebar-link">Data Visualization</a>
-            </div>
-            <p class="border-b-2 border-b-black font-semibold">Components</p>
-            <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
-                <a href="../pages/tables.html" class="sidebar-link">Tables</a>
-                <a href="../pages/numbers.html" class="sidebar-link">Numbers</a>
-                <a href="../pages/navPage.html" class="sidebar-link">Navigation</a>
-                <a href="../pages/buttons.html" class="sidebar-link">Buttons</a>
-                <a href="../pages/icons.html" class="sidebar-link">Icons</a>
-                <a href="../pages/feedback.html" class="sidebar-link">Feedback</a>
-            </div>
+       <div class="bg-[#83ABD0] bg-opacity-90 flex flex-col rounded-lg p-5 shadow gap-y-5">
+        <p class="border-b-2 border-b-black font-semibold">Basics</p>
+        <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
+            <a href="../index.html" class="sidebar-link">Colour</a>
+            <a href="../pages/layout.html" class="sidebar-link">Layout</a>
+            <a href="../pages/typography.html" class="sidebar-link">Typography</a>
+            <a href="../pages/dataVis.html" class="sidebar-link">Data Visualization</a>
         </div>
+        <p class="border-b-2 border-b-black font-semibold">Components</p>
+        <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
+            <a href="../pages/tables.html" class="sidebar-link">Tables</a>
+            <a href="../pages/numbers.html" class="sidebar-link">Numbers</a>
+            <a href="../pages/navPage.html" class="sidebar-link">Navigation</a>
+            <a href="../pages/buttons.html" class="sidebar-link">Buttons</a>
+            <a href="../pages/icons.html" class="sidebar-link">Icons</a>
+            <a href="../pages/feedback.html" class="sidebar-link">Feedback</a>
+        </div>
+    </div>
         <!-- Page Content -->
-        <div class="col-span-3 p-5 flex flex-col gap-y-5">
-            <h2 class="text-4xl font-bold mb-5">Buttons for Data Dashboard</h2>
-            <p class="mb-5">Buttons on the data dashboard should serve clear purposes, enabling users to quickly perform actions. Below are the various button types used in the Star Air dashboard, categorized by function and state.</p>
+        <div class="col-span-3 ml-5 flex flex-col gap-y-5">
+           <div class="flex flex-col gap-y-5 bg-[#D3D3D3] p-5 rounded-lg">
+            <h2 class="text-4xl mb-5">Buttons for Data Dashboard</h2>
+            <p class="mb-5">
+                Buttons on the data dashboard should serve clear purposes, enabling users to quickly perform actions. 
+                Below are the various button types used in the Star Air dashboard, categorized by function and state.
+            </p>
+           </div>
 
             <!-- Priority Buttons Section -->
-            <section class="my-10 bg-[#D3D3D3] p-5 rounded">
+            <section class="bg-[#D3D3D3] p-5 rounded">
                 <h3 class="text-2xl font-semibold mb-3">Priority Buttons</h3>
                 <p class="mb-4">These buttons indicate different levels of action priority, such as primary actions, warnings, and general actions. They help users navigate the dashboard based on task importance.</p>
 
@@ -60,7 +65,7 @@
             </section>
 
             <!-- Disabled Buttons Section -->
-            <section class="my-10 bg-[#D3D3D3] p-5 rounded">
+            <section class="bg-[#D3D3D3] p-5 rounded">
                 <h3 class="text-2xl font-semibold mb-3">Disabled Buttons</h3>
                 <p class="mb-4">Disabled buttons are used when an action is not yet available or the user is not authorized to perform it.</p>
 
@@ -78,7 +83,7 @@
             </section>
 
             <!-- Loading Buttons Section -->
-            <section class="my-10 bg-[#D3D3D3] p-5 rounded">
+            <section class="bg-[#D3D3D3] p-5 rounded">
                 <h3 class="text-2xl font-semibold mb-3">Loading Buttons</h3>
                 <p class="mb-4">These buttons are displayed when the system is processing a request.</p>
 
@@ -102,7 +107,7 @@
             </section>
 
             <!-- Buttons with Icons Section -->
-            <section class="my-10 bg-[#D3D3D3] p-5 rounded">
+            <section class="bg-[#D3D3D3] p-5 rounded">
                 <h3 class="text-2xl font-semibold mb-3">Buttons with Icons</h3>
                 <p class="mb-4">Buttons paired with icons enhance user experience by adding visual cues. These are especially useful for repetitive actions like saving, editing, or deleting data.</p>
 
@@ -150,7 +155,7 @@
             </section>
 
             <!-- Pagination Buttons Section -->
-            <section class="my-10 bg-[#D3D3D3] p-5 rounded">
+            <section class="bg-[#D3D3D3] p-5 rounded">
                 <h3 class="text-2xl font-semibold mb-3">Pagination Buttons</h3>
                 <p class="mb-4">Pagination buttons help users navigate through large sets of data, such as tables or reports.</p>
 
@@ -165,6 +170,30 @@
                     <pre><code>&lt;div class="flex space-x-4"&gt;
     &lt;button class="bg-[#483C32] text-white font-bold py-3 px-6 rounded"&gt;Previous&lt;/button&gt;
     &lt;button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded"&gt;Next&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </section>
+            <!-- Checkboxes Section -->
+            <section class="bg-[#D3D3D3] p-5 rounded">
+                <h3 class="text-2xl font-semibold mb-3">Checkboxes</h3>
+                <p class="mb-4">
+                    Checkboxes may aid in filtering data in a number of ways from emphasizing certain displayed data over others or
+                    rendering some instead of others to begin with.
+                </p>
+
+                <!-- Checkboxes -->
+                <div class="flex space-x-4 ">
+                    <div class="flex items-center">
+                        <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#83ABD0] bg-gray-100 border-gray-300 rounded focus:ring-[#83ABD0] dark:focus:ring-[#83ABD0] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
+                    </div>
+                </div>
+
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code> &lt;div class=&quot;flex items-center&quot;&gt;
+    &lt;input checked id=&quot;checked-checkbox&quot; type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;w-4 h-4 text-[#83ABD0] bg-gray-100 border-gray-300 rounded focus:ring-[#83ABD0] dark:focus:ring-[#83ABD0] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600&quot;&gt;
+    &lt;label for=&quot;checked-checkbox&quot; class=&quot;ms-2 text-sm font-medium text-gray-900 dark:text-gray-300&quot;&gt;Checked state&lt;/label&gt;
 &lt;/div&gt;</code></pre>
                 </div>
             </section>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,11 +29,10 @@
 
 <body class="bg-[#F5F5DC]">
     <!-- Header Image -->
-    <div class="bg-[#BBA79C] bg-opacity-20 flex flex-col justify-center items-center w-full h-96 p-5 pt-8">
-        <img src="../images/starair.png" class="w-1/4 h-3/4" alt="Star Air Logo">
+    <div class="bg-[#D3D3D3] bg-opacity-70 flex flex-col justify-center items-center w-full h-96 p-5 pt-8">
+        <img src="../images/starair.png" class="w-25 h-3/4" alt="Star Air Logo">
         <h1 class="text-5xl">Star Air Pattern Library</h1>
     </div>
-
     <div class="sideContentContainer grid grid-cols-6 mt-[2%]">
         <div></div>
         <!-- Sidebar -->
@@ -56,27 +54,33 @@
                 <a href="../pages/feedback.html" class="sidebar-link">Feedback</a>
             </div>
         </div>
-
         <!-- Page Content -->
-        <div class="pageContent ml-5 col-span-3 flex flex-col gap-y-5 p-5">
-            <h2 class="text-4xl">Navigation Structure</h2>
-            <p>This section describes the navigation structure within the application, detailing the purpose and usage of each navigation element.</p>
-
-            <!-- Navigation Links -->
-            <div class="flex space-x-4 mb-4">
-                <a href="#overview" class="tab-button bg-[#D3D3D3] p-2 rounded-md">Overview</a>
-                <a href="#local-navigation" class="tab-button bg-[#D3D3D3] p-2 rounded-md">Local Navigation</a>
-                <a href="#dropdown-navigation" class="tab-button bg-[#D3D3D3] p-2 rounded-md">Dropdown Navigation</a>
-            </div>
+        <div class="pageContent ml-5 col-span-3 flex flex-col gap-y-5">
+           <div class="flex flex-col gap-y-5 bg-[#D3D3D3] p-5 rounded-lg">
+                <h2 class="text-4xl">Navigation Structure</h2>
+                <p>This section describes the navigation structure within the application, detailing the purpose and usage of each navigation element.</p>
+           </div>
+            <!--Page Nav-->
+            <ul class="flex gap-x-4 p-5 w-full bg-[#D3D3D3] bg-opacity-70 rounded-lg">
+                <li>
+                    <a href="#overview" class="body-nav-text font-semibold">Overview</a>
+                </li>
+                <li>
+                    <a href="#local-navigation" class="body-nav-text font-semibold">Local Navigation</a>
+                </li>
+                <li>
+                    <a href="#dropdown-navigation" class="body-nav-text font-semibold">Dropdown Navigation</a>
+                </li>
+            </ul>
 
             <!-- Overview Section -->
-            <section id="overview" class="section">
+            <section id="overview" class="section flex flex-col gap-y-5">
                 <h3 class="text-2xl">Overview</h3>
                 <p>The navigation menu allows users to easily access different sections of the application. It is designed to be intuitive and user-friendly.</p>
             </section>
 
             <!-- Local Navigation Section -->
-            <section id="local-navigation" class="section">
+            <section id="local-navigation" class="section  flex flex-col gap-y-5">
                 <h3 class="text-2xl">Local Navigation</h3>
                 <p>Local navigation is used for jumping between related pages. For example, the account section includes links to Overview, Settings, and Billing.</p>
 
@@ -103,7 +107,7 @@
             </section>
 
             <!-- Dropdown Navigation Section -->
-            <section id="dropdown-navigation" class="section">
+            <section id="dropdown-navigation" class="section  flex flex-col gap-y-5 items-start">
                 <h3 class="text-2xl">Dropdown Navigation</h3>
                 <p>Dropdown menus are useful for organizing sub-sections under a main category. Click to reveal more options.</p>
 

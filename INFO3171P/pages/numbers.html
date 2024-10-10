@@ -40,15 +40,19 @@
             <!--Page Nav-->
             <ul class="flex gap-x-4 p-5 w-full bg-[#D3D3D3] bg-opacity-70 rounded-lg">
                 <li>
-                    <a href="#" class="body-nav-text font-semibold">Single Figures</a>
+                    <a href="#single-figure" class="body-nav-text font-semibold">Single Figures</a>
                 </li>
                 <li>
-                    <a href="#" class="body-nav-text font-semibold">Code</a>
+                    <a href="#page-code" class="body-nav-text font-semibold">Code</a>
                 </li>
             </ul>
           
             <section class="bg-[#D3D3D3] bg-opacity-70 flex flex-col gap-y-5 p-5 rounded-lg">
-                <h3>Single Figures</h3>
+                <h3 id="single-figure">Single Figures</h3>
+                <p>
+                    These figure widgets will surround the dashboard on most sides and display relevant summaries of certain data. 
+                    With the use of font size and simple colours, the user will be able to understand overall trends with just a glance.
+                </p>
                 <div class="flex flex-col flex-wrap gap-5 items-center">
                     <h4>Single-Summary</h4>
                     <div class="flex flex-wrap gap-5">
@@ -72,10 +76,9 @@
                     <h4>Summary Graph</h4>
                     <div class="flex flex-wrap gap-5">
                         <div class="bg-gray-300 bg-opacity-50 min-h-[5rem] w-[25rem] rounded-lg p-5 shadow-2xl flex justify-between items-center">
-                            <p>Total Flights</p>
-                            <div class="flex flex-col">
-                                <h3>$450,000</h3>
-                                <p class="data-decrease">↓ 5%</p>
+                            <div class="flex flex-col items-center gap-y-5">
+                                <h3>Total Shares</h3>
+                                <img src="../images/donutChart.png">
                             </div>
                         </div>
                     </div>
@@ -84,7 +87,7 @@
             <!--Code-->
             <hr>
             <section class="flex flex-col gap-y-5">
-                <h3>Code</h3>
+                <h3 id="page-code">Code</h3>
                 <h4>Single Figures</h4>
                 <div class="bg-[#36454F] rounded-lg  text-white overflow-x-auto">
                     <pre class="p-5">
