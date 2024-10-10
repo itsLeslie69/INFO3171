@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/output.css">
-    <title>Typography | Star Air</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>TNavigation | Star Air</title>
 </head>
-<body class="h-screen">
+<body class="bg-[#F5F5DC]">
     <!--Header Image-->
-    <div class="bg-[#BBA79C] bg-opacity-20 flex flex-col justify-center items-center w-screen h-96 p-5 pt-8">
-        <img src="../images/starair.png" class="w-25 h-3/4" />
+    <div class="bg-[#BBA79C] bg-opacity-20 flex flex-col justify-center items-center w-full h-96 p-5 pt-8">
+        <img src="../images/starair.png" class="w-1/4 h-3/4">
         <h1 class="text-5xl">Star Air Pattern Library</h1>
     </div>
 
     <div class="sideContentContainer grid grid-cols-6 mt-[2%]">
         <div></div>
         <!--Sidebar-->
-        <div class="bg-[#008970] bg-opacity-30 flex flex-col rounded-lg p-5 shadow gap-y-5">
+        <div class="bg-[#83ABD0] bg-opacity-90 flex flex-col rounded-lg p-5 shadow gap-y-5">
             <p class="border-b-2 border-b-black font-semibold">Basics</p>
             <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
                 <a href="../index.html" class="sidebar-link">Colour</a>
@@ -34,81 +35,115 @@
                 <a href="../pages/feedback.html" class="sidebar-link">Feedback</a>
             </div>
         </div>
+
         <!-- Page Content -->
-        <div class="pageContent col-span-3 p-5 flex flex-col gap-y-5">
-            <h2 class="text-4xl">Navigation</h2>
-            <!--Page Nav-->
-            <ul class="flex gap-x-4 p-5 w-full">
-                <li>
-                    <a href="#" class="body-nav-text font-semibold">Test</a>
-                </li>
-                <li>
-                    <a href="#" class="body-nav-text font-semibold">Test</a>
-                </li>
-                <li>
-                    <a href="#" class="body-nav-text font-semibold">Test</a>
-                </li>
-                <li>
-                    <a href="#" class="body-nav-text font-semibold">Test</a>
-                </li>
-            </ul>
-            <section class="flex flex-col gap-y-5">
-                <h3>Website Navbar</h3>
-                <div class="flex flex-col flex-wrap gap-5 w-full">
-                    <div class="p-5 flex w-full">
-                        <div class="bg-[#F58634] bg-opacity-30 flex rounded-lg p-5 shadow gap-y-5 w-full">
-                            <div class="text-black-300 text-sm flex items-center gap-x-4 gap-y-4 w-full">
-                                <a href="#" class="sidebar-link">Logo</a>
-                                <a href="#" class="sidebar-link">Book</a>
-                                <a href="#" class="sidebar-link">Travel Info</a>
-                                <a href="" class="sidebar-link">Membership</a>
-                                <a href="#" class="sidebar-link">Login | Sign up</a>
-                            </div>
+        <div class="pageContent ml-5 col-span-3 flex flex-col gap-y-5 p-5">
+            <h2 class="text-4xl">Navigation Structure</h2>
+            <p>This section describes the navigation structure within the application, detailing the purpose and usage of each navigation element.</p>
+
+            <!-- Overview Section -->
+            <section class="flex flex-col gap-y-5 bg-[#D3D3D3] bg-opacity-70 p-5 rounded-lg shadow-md">
+                <h3 class="text-2xl">Overview</h3>
+                <p>The navigation menu allows users to easily access different sections of the application. It is designed to be intuitive and user-friendly.</p>
+            </section>
+
+            <!-- Local Navigation Section -->
+            <section class="flex flex-col gap-y-5 bg-[#D3D3D3] bg-opacity-70 p-5 rounded-lg shadow-md">
+                <h3 class="text-2xl">Local Navigation</h3>
+                <p>Local navigation is used for jumping between related pages. For example, the account section includes links to Overview, Settings, and Billing.</p>
+
+                <ul class="local-nav selfclear list-disc pl-5">
+                    <li class="current">
+                        <a href="#/account/" class="text-blue-600 hover:underline">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#/account/settings" class="text-blue-600 hover:underline">Settings</a>
+                    </li>
+                    <li>
+                        <a href="#/account/billing" class="text-blue-600 hover:underline">Billing</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Dropdown Navigation Section -->
+            <section class="flex flex-col gap-y-5 bg-[#D3D3D3] bg-opacity-70 p-5 rounded-lg shadow-md">
+                <h3 class="text-2xl">Dropdown Navigation</h3>
+                <p>Dropdown menus are useful for organizing sub-sections under a main category. Click to reveal more options.</p>
+
+                <div class="relative inline-block text-left">
+                    <div>
+                        <button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="dropdown-button">
+                            Account
+                            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06 0L10 10.293l3.71-3.09a.75.75 0 111.03 1.09l-4.25 3.5a.75.75 0 01-1.03 0l-4.25-3.5a.75.75 0 010-1.09z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="dropdown-content absolute right-0 z-10 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden" id="dropdown-menu">
+                        <div class="py-1">
+                            <a href="#/account/users" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Users</a>
+                            <a href="#/account/contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact Info</a>
+                            <a href="#/account/data" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Manage Data</a>
                         </div>
                     </div>
-                    <div class="p-5 flex flex-col">
-                        <h3>Code</h3>
-                        <code>
-                            code here
-                        </code>
-                    </div>
                 </div>
             </section>
-            <section class="flex flex-col gap-y-5">
-                <h3>Local Navbar</h3>
-                <div class="p-5 flex gap-y-5">
-                    <div>
-                        <ul class="flex gap-x-4 p-5 w-full">
-                            <li>
-                                <a href="#" class="body-nav-text font-semibold">Test</a>
-                            </li>
-                            <li>
-                                <a href="#" class="body-nav-text font-semibold">Test</a>
-                            </li>
-                            <li>
-                                <a href="#" class="body-nav-text font-semibold">Test</a>
-                            </li>
-                            <li>
-                                <a href="#" class="body-nav-text font-semibold">Test</a>
-                            </li>
-                        </ul>
-                    </div>
-                <div class="p-5 flex flex-col gap-y-5 w-2/6">
-                    <h3>Code</h3>
-                    <code>
-                        here is my code
-                    </code>
+
+                    <!-- Tabs Section -->
+            <section class="flex flex-col gap-y-5 bg-[#D3D3D3] bg-opacity-70 p-5 rounded-lg shadow-md">
+                <h3 class="text-2xl">Tabs</h3>
+                <p>Tabs are used to switch between different views or categories without leaving the page. They enhance user experience by keeping content organized.</p>
+
+                <div class="flex space-x-4">
+                    <button class="tab-button px-4 py-2 bg-[rgba(245,245,220,0.7)] text-white rounded-md" onclick="showTab(1)">Tab 1</button>
+                    <button class="tab-button px-4 py-2 bg-[rgba(245,245,220,0.7)] text-white rounded-md" onclick="showTab(2)">Tab 2</button>
+                    <button class="tab-button px-4 py-2 bg-[rgba(245,245,220,0.7)] text-white rounded-md" onclick="showTab(3)">Tab 3</button>
                 </div>
+                <div class="tab-content mt-2">
+                    <div class="tab-pane active p-4 border border-gray-300 rounded-md">Content for Tab 1</div>
+                    <div class="tab-pane p-4 border border-gray-300 rounded-md hidden">Content for Tab 2</div>
+                    <div class="tab-pane p-4 border border-gray-300 rounded-md hidden">Content for Tab 3</div>
                 </div>
             </section>
-            <!--Code-->
-            <hr>
-            <section class="flex flex-col gap-y-5">
-                <h3>Code</h3>
-               
-            </section>
+
+
         </div>
     </div>
 
+    <script>
+        // Tab switching function
+        function showTab(tabIndex) {
+            const tabs = document.querySelectorAll('.tab-button');
+            const panes = document.querySelectorAll('.tab-pane');
+    
+            tabs.forEach((tab, index) => {
+                tab.classList.remove('bg-[#36454F]', 'font-bold'); // Remove active tab color
+                tab.classList.add('bg-[rgba(245,245,220,0.7)]'); // Set inactive tabs to the new color
+                panes[index].classList.add('hidden');
+    
+                if (index === tabIndex - 1) {
+                    tab.classList.add('bg-[#36454F]', 'font-bold'); // Active tab color is #36454F
+                    panes[index].classList.remove('hidden');
+                }
+            });
+        }
+    
+        // Dropdown toggle
+        const dropdownButton = document.getElementById('dropdown-button');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+    
+        dropdownButton.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
+    
+        // Close dropdown if clicked outside
+        window.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+            }
+        });
+    </script>
+    
 </body>
 </html>
