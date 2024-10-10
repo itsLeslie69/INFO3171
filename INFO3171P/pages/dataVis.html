@@ -125,20 +125,54 @@
             <!-- Grids Section -->
             <section id="grids-section" class="flex flex-col gap-y-5">
                 <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70">
-                <h3 class="text-2xl">Grid Systems</h3>
-                <p>Grid systems help maintain structure across our visualizations. Use a 12-column grid for layouts and align elements consistently for a cleaner appearance.</p>
-                <!-- Add your grid systems content here -->
+                    <h3 class="text-2xl">Grid Systems</h3>
+                    <p>Grid systems help maintain structure across our visualizations. Use a 12-column grid for layouts and align elements consistently for a cleaner appearance.</p>
+                    
+                    <h4 class="text-xl mt-4">Grid Guidelines:</h4>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Use a consistent gutter size (e.g., 20px) between columns to maintain visual harmony.</li>
+                        <li>Elements should span columns evenly; avoid uneven spacing that can create confusion.</li>
+                        <li>Ensure that important visual elements align with the grid to improve readability.</li>
+                        <li>For mobile views, consider a single-column grid layout to enhance usability.</li>
+                        <li>Adjust the grid as necessary for different screen sizes while maintaining the overall structure.</li>
+                    </ul>
+            
+                    <h4 class="text-xl mt-4">Example Usage:</h4>
+                    <p>When displaying a dashboard, use the grid to align charts, tables, and metrics in a visually balanced way. For instance, place three metrics side by side in a single row, each taking up four columns, and stack additional information below them.</p>
+                    
+                 
                 </div>
             </section>
+            
+            
 
             <!-- Fly-over Section -->
             <section id="flyover-section" class="flex flex-col gap-y-5">
                 <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70">
-                <h3 class="text-2xl">Fly-over Effects</h3>
-                <p>Implement fly-over effects to enhance user engagement. These should be subtle and not distracting, helping to provide additional context or data when necessary.</p>
-                <!-- Add your fly-over effects content here -->
+                    <h3 class="text-2xl">Fly-over Effects</h3>
+                    <p>Implement fly-over effects to enhance user engagement. These should be subtle and not distracting, helping to provide additional context or data when necessary.</p>
+                    
+                    <h4 class="text-xl mt-4">Fly-over Guidelines:</h4>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Use tooltips to display detailed information when users hover over charts or data points.</li>
+                        <li>Keep tooltips concise; display only the most relevant information to avoid clutter.</li>
+                        <li>Animate fly-over effects gently, such as fading in the tooltip, to create a smoother user experience.</li>
+                        <li>Ensure that fly-over elements are accessible; consider keyboard navigation and screen readers.</li>
+                        <li>Test fly-over effects on various devices to ensure they work seamlessly across platforms.</li>
+                    </ul>
+            
+                    <h4 class="text-xl mt-4">Example Implementation:</h4>
+                    <p>For a line chart, when a user hovers over a data point, a tooltip could appear showing the exact value and date. This feature provides users with quick insights without overwhelming them with too much information.</p>
+                    
+                 <!-- Visual Example -->
+                <div class="mt-4">
+                    <h4 class="text-lg font-semibold">Visual Example:</h4>
+                    <img src="../images/flyover.png" alt="Fly-over Effects Example" class="w-1/2 h-auto rounded-lg"> <!-- Change w-full to w-1/2 -->
+                    <p class="mt-2">This example illustrates a tooltip that appears when hovering over a data point in a line chart, providing additional context without cluttering the main visual.</p>
+                </div>
                 </div>
             </section>
+            
         </div>
     </div>
 </body>
