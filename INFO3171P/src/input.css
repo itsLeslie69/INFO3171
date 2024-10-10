@@ -90,3 +90,7 @@ p.data-increase {
 p.data-decrease {
     color: #BD0202;
 }
+
+.dash-img-div {
+    background-image: url("../images/lineChart.png");
+}
