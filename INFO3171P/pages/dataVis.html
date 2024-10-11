@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/output.css">
+    <title>Data Visualization | Star Air</title>
+</head>
+<body class="bg-[#F5F5DC]">
+    <!--Header Image-->
+    <div class="bg-[#D3D3D3] bg-opacity-70 flex flex-col justify-center items-center w-screen h-96 p-5 pt-8">
+        <img src="../images/starair.png" class="w-25 h-3/4" />
+        <h1 class="text-5xl">Star Air Pattern Library</h1>
+    </div>
+
+    <div class="sideContentContainer grid grid-cols-6 mt-[2%]">
+        <!--Sidebar-->
+        <div class="bg-[#83ABD0] bg-opacity-90 flex flex-col rounded-lg p-5 shadow gap-y-5">
+            <p class="border-b-2 border-b-black font-semibold">Basics</p>
+            <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
+                <a href="../index.html" class="sidebar-link">Colour</a>
+                <a href="../pages/layout.html" class="sidebar-link">Layout</a>
+                <a href="../pages/typography.html" class="sidebar-link">Typography</a>
+                <a href="#" class="sidebar-link">Data Visualization</a>
+            </div>
+            <p class="border-b-2 border-b-black font-semibold">Components</p>
+            <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
+                <a href="../pages/tables.html" class="sidebar-link">Tables</a>
+                <a href="../pages/numbers.html" class="sidebar-link">Numbers</a>
+                <a href="../pages/navPage.html" class="sidebar-link">Navigation</a>
+                <a href="../pages/buttons.html" class="sidebar-link">Buttons</a>
+                <a href="../pages/icons.html" class="sidebar-link">Icons</a>
+                <a href="../pages/feedback.html" class="sidebar-link">Feedback</a>
+            </div>
+        </div>
+        <div></div>
+        <!-- Page Content -->
+        <div class="pageContent col-span-3 ml-5 flex flex-col gap-y-5 ">
+            <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70 flex flex-col gap-y-5">
+                <h2 class="text-4xl">Data Visualization</h2>
+                <p>
+                    Data is one of the core drivers for decision-making at Star Air. 
+                    Therefore, it’s essential that our visualizations are clear, impactful, and designed to convey the right information at a glance. 
+                    Here we outline the principles and styling guidelines that will ensure consistent and effective data presentation.
+                </p>
+            </div>
+            <!-- Page Nav -->
+            <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70">
+            <ul class="flex gap-x-4 p-5 w-full">
+                <li><a href="#charts-section" class="body-nav-text font-semibold">Charts</a></li>
+                <li><a href="#palette-section" class="body-nav-text font-semibold">Palette</a></li>
+                <li><a href="#grids-section" class="body-nav-text font-semibold">Grids</a></li>
+                <li><a href="#flyover-section" class="body-nav-text font-semibold">Fly-over</a></li>
+            </ul>
+            </div>
+
+            <!-- Charts Section -->
+            <section id="charts-section" class="flex flex-col gap-y-5">
+                <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70">
+                <h3 class="text-2xl">Chart Design Guidelines</h3>
+                <p>Our charts should always prioritize clarity and simplicity. Each chart type serves a specific purpose and follows a set of design rules to maintain consistency and avoid unnecessary complexity.</p>
+                </div>
+                <!-- Line Chart -->
+                <div class="p-5 rounded-lg shadow-md min-h-[20rem] bg-[#D3D3D3] bg-opacity-70">
+                <h4>Line Charts</h4>
+                <p>Line charts are used for visualizing trends over time. Ensure the line is smooth, 2px thick, and never curved unless required. Dotted lines can be used to represent secondary metrics such as averages or projections. Dots may be added at key data points to provide extra clarity.</p>
+                    <img src="../images/lineChart.png" alt="Line Chart" class="w-full h-auto">
+                    <p class="mt-4">Description: Line charts visualize trends over time with smooth lines and optional markers for key data points.</p>
+                </div>
+
+                <!-- Bar Chart -->
+                <div class="p-5 rounded-lg shadow-md min-h-[20rem] bg-[#D3D3D3] bg-opacity-70">
+                <h4>Bar Charts</h4>
+                <p>Bar charts should be used to compare different categories or values. The spacing between bars should always be 50% of the bar width. If using stacked bars, opt for distinct color combinations to enhance readability.</p>
+                    <img src="../images/barChart.png" alt="Bar Chart" class="w-full h-auto">
+                    <p class="mt-4">Description: Bar charts compare different categories, ensuring clear spacing and distinct colors for stacked bars.</p>
+                </div>
+
+                <!-- Stacked Bar Chart -->
+                <div class="p-5 rounded-lg shadow-md min-h-[20rem] bg-[#D3D3D3] bg-opacity-70">
+                <h4>Stacked Bar Charts</h4>
+                <p>Stacked bar charts are an excellent choice for visualizing how individual categories contribute to the whole. Choose contrasting colors for each category to maintain clarity. Make sure to avoid overlap when possible.</p>
+                    <img src="../images/horizontalStacked.png" alt="Stacked Bar Chart" class="w-full h-auto">
+                    <p class="mt-4">Description: Stacked bar charts show category contributions to the whole with contrasting colors for clarity.</p>
+                </div>
+
+                <!-- Scatter Plot -->
+                <div class="p-5 rounded-lg shadow-md min-h-[20rem] bg-[#D3D3D3] bg-opacity-70">
+                <h4>Scatter Plots</h4>
+                <p>Scatter plots are ideal for showing relationships between variables. The points should be 8px by 8px, and if multiple categories are used, vary the shape (circle, square, triangle) to aid differentiation. Ensure that colors from our palette are used to maintain brand consistency.</p>
+                    <img src="../images/scatterChart.png" alt="Scatter Plot" class="w-full h-auto">
+                    <p class="mt-4">Description: Scatter plots illustrate relationships between variables, using varied shapes for multiple categories.</p>
+                </div>
+
+                <!-- Donut Chart -->
+                <div class="p-5 rounded-lg shadow-md min-h-[20rem] bg-[#D3D3D3] bg-opacity-70">
+                <h4>Donut Charts</h4>
+                <p>Donut charts can be used to represent parts of a whole, with a central hole to add emphasis on the data proportions. Use strong contrast between segments to ensure the data is easily distinguishable.</p>
+                    <img src="../images/donutChart.png" alt="Donut Chart" class="w-full h-auto">
+                    <p class="mt-4">Description: Donut charts display parts of a whole with central emphasis and contrasting segments for clarity.</p>
+                </div>
+
+                <!-- Half Donut Chart -->
+                <div class="p-5 rounded-lg shadow-md min-h-[20rem] bg-[#D3D3D3] bg-opacity-70">
+                <h4>Half Donut Charts</h4>
+                <p>Half-donut charts are an effective way to display data in a visually impactful manner. They allow for proportional data to be showcased without overcrowding the chart.</p>
+                    <img src="../images/halfDonut.png" alt="Half Donut Chart" class="w-full h-auto">
+                    <p class="mt-4">Description: Half-donut charts showcase proportional data in a visually impactful way, avoiding overcrowding.</p>
+                </div>
+
+                <!-- Pie Chart -->
+                <div class="p-5 rounded-lg shadow-md min-h-[20rem] bg-[#D3D3D3] bg-opacity-70">
+                <h4>Pie Charts</h4>
+                <p>Pie charts can be used to display proportions. Each section should be colored distinctly to avoid confusion, and labels should be clear and readable.</p>
+                    <img src="../images/pieChart.png" alt="Pie Chart" class="w-full h-auto">
+                    <p class="mt-4">Description: Pie charts display proportions clearly with distinct coloring and readable labels for each section.</p>
+                </div>
+
+                <!-- Single Value Chart -->
+                <div class="p-5 rounded-lg shadow-md min-h-[20rem] bg-[#D3D3D3] bg-opacity-70">
+                <h4>Single Value Charts</h4>
+                <p>Single value charts, such as gauges, help display key metrics quickly and easily. Ensure that the main value is easily readable, with appropriate colors for positive or negative outcomes.</p>
+                    <img src="../images/singleValueChart.png" alt="Single Value Chart" class="w-full h-auto">
+                    <p class="mt-4">Description: Single value charts showcase key metrics with clear readability and color indicators for outcomes.</p>
+                </div>
+            </section>
+
+
+            <!-- Grids Section -->
+            <section id="grids-section" class="flex flex-col gap-y-5">
+                <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70 flex flex-col gap-y-5">
+                    <h3 class="text-2xl">Grid Systems</h3>
+                    <p>Grid systems help maintain structure across our visualizations. Use a 12-column grid for layouts and align elements consistently for a cleaner appearance.</p>
+                    
+                    <h4 class="text-xl mt-4">Grid Guidelines:</h4>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Use a consistent gutter size (e.g., 20px) between columns to maintain visual harmony.</li>
+                        <li>Elements should span columns evenly; avoid uneven spacing that can create confusion.</li>
+                        <li>Ensure that important visual elements align with the grid to improve readability.</li>
+                        <li>For mobile views, consider a single-column grid layout to enhance usability.</li>
+                        <li>Adjust the grid as necessary for different screen sizes while maintaining the overall structure.</li>
+                    </ul>
+            
+                    <h4 class="text-xl mt-4">Example Usage:</h4>
+                    <p>When displaying a dashboard, use the grid to align charts, tables, and metrics in a visually balanced way. For instance, place three metrics side by side in a single row, each taking up four columns, and stack additional information below them.</p>
+                    
+                 
+                </div>
+            </section>
+            
+            <!-- Fly-over Section -->
+            <section id="flyover-section" class="flex flex-col gap-y-5">
+                <div class="p-5 rounded-lg shadow-md bg-[#D3D3D3] bg-opacity-70 flex flex-col gap-y-5">
+                    <h3 class="text-2xl">Fly-over Effects</h3>
+                    <p>Implement fly-over effects to enhance user engagement. These should be subtle and not distracting, helping to provide additional context or data when necessary.</p>
+                    
+                    <h4 class="text-xl mt-4">Fly-over Guidelines:</h4>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Use tooltips to display detailed information when users hover over charts or data points.</li>
+                        <li>Keep tooltips concise; display only the most relevant information to avoid clutter.</li>
+                        <li>Animate fly-over effects gently, such as fading in the tooltip, to create a smoother user experience.</li>
+                        <li>Ensure that fly-over elements are accessible; consider keyboard navigation and screen readers.</li>
+                        <li>Test fly-over effects on various devices to ensure they work seamlessly across platforms.</li>
+                    </ul>
+            
+                    <h4 class="text-xl mt-4">Example Implementation:</h4>
+                    <p>For a line chart, when a user hovers over a data point, a tooltip could appear showing the exact value and date. This feature provides users with quick insights without overwhelming them with too much information.</p>
+                    
+                    <!-- Visual Example -->
+                    <div class="mt-4 flex flex-col gap-y-5">
+                        <h4 class="text-lg font-semibold">Visual Example:</h4>
+                        <img src="../images/flyover.png" alt="Fly-over Effects Example" class="w-1/2 h-auto rounded-lg"> <!-- Change w-full to w-1/2 -->
+                        <p class="mt-2">This example illustrates a tooltip that appears when hovering over a data point in a line chart, providing additional context without cluttering the main visual.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

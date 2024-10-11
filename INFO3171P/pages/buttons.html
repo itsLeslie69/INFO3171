@@ -4,121 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/output.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
     <title>Buttons | Star Air</title>
 </head>
-<body class="h-screen">
+<body class="bg-[#F5F5DC]">
     <!--Header Image-->
-    <div class="bg-[#BBA79C] bg-opacity-20 flex flex-col justify-center items-center w-full h-96 p-5 pt-8">
-        <img src="../images/starair.png" class="w-1/4 h-3/4">
+    <div class="bg-[#D3D3D3] bg-opacity-70 flex flex-col justify-center items-center w-screen h-96 p-5 pt-8">
+        <img src="../images/starair.png" class="w-25 h-3/4" />
         <h1 class="text-5xl">Star Air Pattern Library</h1>
     </div>
 
-        <div class="sideContentContainer flex w-full">
-            <!--Sidebar-->
-            <div class="bg-[#83ABD0] bg-opacity-90 flex flex-col rounded-lg p-5 shadow gap-y-5">
-               <p class="border-b-2 border-b-black font-semibold">Basics</p>
-               <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
-                   <a href="./colour.html" class="sidebar-link">Colour</a>
-                   <a href="./layout.html" class="sidebar-link">Layout</a>
-                   <a href="./typography.html" class="sidebar-link">Typography</a>
-                   <a href="./dataVisualization.html" class="sidebar-link">Data Visualization</a>
-               </div>
-               <p class="border-b-2 border-b-black font-semibold">Components</p>
-               <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
-                   <a href="./queryHero.html" class="sidebar-link">Query Hero</a>
-                   <a href="./destCards.html" class="sidebar-link">Offer Cards</a>
-                   <a href="./navigation.html" class="sidebar-link">Navigation</a>
-                   <a href="./buttons.html" class="sidebar-link">Buttons</a>
-                   <a href="./selections.html" class="sidebar-link">Time/Place Selection</a>
-                   <a href="./feedback.html" class="sidebar-link">Feedback</a>
-                   <a href="./icons.html" class="sidebar-link">Icons</a>
-               </div>
-           </div>
-
+    <div class="sideContentContainer grid grid-cols-6 mt-[2%]">
+        <!--Sidebar-->
+       <div class="bg-[#83ABD0] bg-opacity-90 flex flex-col rounded-lg p-5 shadow gap-y-5">
+        <p class="border-b-2 border-b-black font-semibold">Basics</p>
+        <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
+            <a href="../index.html" class="sidebar-link">Colour</a>
+            <a href="../pages/layout.html" class="sidebar-link">Layout</a>
+            <a href="../pages/typography.html" class="sidebar-link">Typography</a>
+            <a href="../pages/dataVis.html" class="sidebar-link">Data Visualization</a>
+        </div>
+        <p class="border-b-2 border-b-black font-semibold">Components</p>
+        <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
+            <a href="../pages/tables.html" class="sidebar-link">Tables</a>
+            <a href="../pages/numbers.html" class="sidebar-link">Numbers</a>
+            <a href="../pages/navPage.html" class="sidebar-link">Navigation</a>
+            <a href="../pages/buttons.html" class="sidebar-link">Buttons</a>
+            <a href="../pages/icons.html" class="sidebar-link">Icons</a>
+            <a href="../pages/feedback.html" class="sidebar-link">Feedback</a>
+        </div>
+    </div>
+    <div></div>
         <!-- Page Content -->
-        <div class="pageContent col-span-3 p-5 flex flex-col gap-y-5">
-            <h2 class="text-4xl">Buttons for Data Dashboard</h2>
-            <p>Buttons on the data dashboard should serve clear purposes, enabling users to quickly perform actions. Below are the various button types used in the Star Air dashboard, categorized by function and state.</p>
-
+        <div class="col-span-3 ml-5 flex flex-col gap-y-5">
+           <div class="flex flex-col gap-y-5 bg-[#D3D3D3] p-5 rounded-lg">
+            <h2 class="text-4xl mb-5">Buttons for Data Dashboard</h2>
+            <p class="mb-5">
+                Buttons on the data dashboard should serve clear purposes, enabling users to quickly perform actions. 
+                Below are the various button types used in the Star Air dashboard, categorized by function and state.
+            </p>
+           </div>
+            <!--Page Nav-->
+            <ul class="flex gap-x-4 p-5 w-full bg-[#D3D3D3] bg-opacity-70 rounded-lg">
+                <li>
+                    <a href="#priority" class="body-nav-text font-semibold">Priority</a>
+                </li>
+                <li>
+                    <a href="#disabled" class="body-nav-text font-semibold">Disabled</a>
+                </li>
+                <li>
+                    <a href="#loading" class="body-nav-text font-semibold">Loading</a>
+                </li>
+                <li>
+                    <a href="#icons" class="body-nav-text font-semibold">Icons</a>
+                </li>
+                <li>
+                    <a href="#pagination" class="body-nav-text font-semibold">Pagination</a>
+                </li>
+                <li>
+                    <a href="#checkboxes" class="body-nav-text font-semibold">Checkboxes</a>
+                </li>
+            </ul>
             <!-- Priority Buttons Section -->
-            <section class="flex flex-col gap-y-5">
-                <h3 class="text-2xl">Priority Buttons</h3>
-                <p>These buttons indicate different levels of action priority, such as primary actions, warnings, and general actions. They help users navigate the dashboard based on task importance.</p>
+            <section class="bg-[#D3D3D3] p-5 rounded">
+                <h3 id="priority" class="text-2xl font-semibold mb-3">Priority Buttons</h3>
+                <p class="mb-4">These buttons indicate different levels of action priority, such as primary actions, warnings, and general actions. They help users navigate the dashboard based on task importance.</p>
 
-                <!-- Example of Priority Buttons -->
-                <button class="button primary margin-bottom--lv3">Primary Action</button>
-                <button class="button secondary margin-bottom--lv3">Secondary Action</button>
-                <button class="button warning margin-bottom--lv3">Warning Action</button>
+                <!-- Priority Buttons -->
+                <button class="bg-[#28A745] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#22963d] transition duration-200 ease-in-out transform hover:scale-105 mb-3 cursor-pointer">Success</button>
+                <button class="bg-[#F4C96B] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#e3b55a] transition duration-200 ease-in-out transform hover:scale-105 mb-3 cursor-pointer">Warning</button>
+                <button class="bg-[#BD0202] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#9d0202] transition duration-200 ease-in-out transform hover:scale-105 mb-3 cursor-pointer">Error</button>
+                <button class="bg-[#83ABD0] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#6a9bbf] transition duration-200 ease-in-out transform hover:scale-105 mb-3 cursor-pointer">Information</button>
 
-                <h4 class="text-lg">Usage</h4>
-                <p>Use the `<button>` tag to create these buttons, assigning classes like <code>primary</code>, <code>secondary</code>, or <code>warning</code> depending on the action’s significance.</p>
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code>&lt;button class="bg-[#28A745] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#22963d] transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer"&gt;Success&lt;/button&gt;
+&lt;button class="bg-[#F4C96B] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#e3b55a] transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer"&gt;Warning&lt;/button&gt;
+&lt;button class="bg-[#BD0202] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#9d0202] transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer"&gt;Error&lt;/button&gt;
+&lt;button class="bg-[#83ABD0] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#6a9bbf] transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer"&gt;Information&lt;/button&gt;</code></pre>
+                </div>
             </section>
 
             <!-- Disabled Buttons Section -->
-            <section class="flex flex-col gap-y-5">
-                <h3 class="text-2xl">Disabled Buttons</h3>
-                <p>Disabled buttons are used when an action is not yet available or the user is not authorized to perform it. These buttons have a grayed-out appearance and cannot be interacted with.</p>
+            <section class="bg-[#D3D3D3] p-5 rounded">
+                <h3 id="disabled" class="text-2xl font-semibold mb-3">Disabled Buttons</h3>
+                <p class="mb-4">Disabled buttons are used when an action is not yet available or the user is not authorized to perform it.</p>
 
-                <!-- Example of Disabled Buttons -->
-                <button class="button primary margin-bottom--lv3" disabled>Primary Disabled</button>
-                <button class="button secondary margin-bottom--lv3" disabled>Secondary Disabled</button>
-                <button class="button warning margin-bottom--lv3" disabled>Warning Disabled</button>
+                <!-- Disabled Buttons -->
+                <button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed mb-3" disabled>Primary Disabled</button>
+                <button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed mb-3" disabled>Secondary Disabled</button>
+                <button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed mb-3" disabled>Tertiary Disabled</button>
 
-                <h4 class="text-lg">Usage</h4>
-                <p>Apply the <code>disabled</code> attribute directly to the button tag to indicate that the button is inactive. Disabled buttons are useful for guiding users on which actions are available.</p>
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code>&lt;button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed" disabled&gt;Primary Disabled&lt;/button&gt;
+&lt;button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed" disabled&gt;Secondary Disabled&lt;/button&gt;
+&lt;button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded opacity-50 cursor-not-allowed" disabled&gt;Tertiary Disabled&lt;/button&gt;</code></pre>
+                </div>
             </section>
 
             <!-- Loading Buttons Section -->
-            <section class="flex flex-col gap-y-5">
-                <h3 class="text-2xl">Loading Buttons</h3>
-                <p>These buttons are displayed when the system is processing a request. They provide feedback to the user, indicating that an action is in progress.</p>
+            <section class="bg-[#D3D3D3] p-5 rounded">
+                <h3 id="loading" class="text-2xl font-semibold mb-3">Loading Buttons</h3>
+                <p class="mb-4">These buttons are displayed when the system is processing a request.</p>
 
-                <!-- Example of Loading Buttons -->
-                <button class="button primary button-loading margin-bottom--lv3" disabled>Loading...</button>
-                <button class="button secondary button-loading margin-bottom--lv3" disabled>Loading...</button>
-                <button class="button warning button-loading margin-bottom--lv3" disabled>Loading...</button>
+                <!-- Loading Button -->
+                <button class="bg-[#008970] text-white font-bold py-3 px-6 rounded flex items-center gap-2 cursor-not-allowed mb-3 shadow-lg transition duration-200 ease-in-out transform hover:scale-105" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" />
+                    </svg>
+                    Loading...
+                </button>
 
-                <h4 class="text-lg">Usage</h4>
-                <p>Toggle the class <code>button-loading</code> dynamically when a request starts, and remove it once the process completes. Use these for actions that may take time, such as data retrieval or submission.</p>
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code>&lt;button class="bg-[#008970] text-white font-bold py-3 px-6 rounded flex items-center gap-2 cursor-not-allowed" disabled&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" /&gt;
+    &lt;/svg&gt;
+    Loading...
+&lt;/button&gt;</code></pre>
+                </div>
             </section>
 
             <!-- Buttons with Icons Section -->
-            <section class="flex flex-col gap-y-5">
-                <h3 class="text-2xl">Buttons with Icons</h3>
-                <p>Buttons paired with icons enhance user experience by adding visual cues. These are especially useful for repetitive actions like saving, editing, or deleting data.</p>
+            <section class="bg-[#D3D3D3] p-5 rounded">
+                <h3 id="icons" class="text-2xl font-semibold mb-3">Buttons with Icons</h3>
+                <p class="mb-4">Buttons paired with icons enhance user experience by adding visual cues. These are especially useful for repetitive actions like saving, editing, or deleting data.</p>
 
-                <!-- Example of Buttons with Icons -->
-                <button class="button primary margin-bottom--lv3">
-                    <span class="icon-save"></span> Save
+                <!-- Buttons with Icons -->
+                <button class="bg-[#28A745] text-white font-bold py-3 px-6 rounded flex items-center gap-2 cursor-not-allowed mb-3 shadow-lg transition duration-200 ease-in-out transform hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" />
+                    </svg>
+                    Save
                 </button>
-                <button class="button secondary margin-bottom--lv3">
-                    <span class="icon-edit"></span> Edit
+                <button class="bg-[#F4C96B] text-white font-bold py-3 px-6 rounded flex items-center gap-2 cursor-not-allowed mb-3 shadow-lg transition duration-200 ease-in-out transform hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" />
+                    </svg>
+                    Edit
                 </button>
-                <button class="button warning margin-bottom--lv3">
-                    <span class="icon-trash"></span> Delete
+                <button class="bg-[#BD0202] text-white font-bold py-3 px-6 rounded flex items-center gap-2 cursor-not-allowed mb-3 shadow-lg transition duration-200 ease-in-out transform hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" />
+                    </svg>
+                    Delete
                 </button>
 
-                <h4 class="text-lg">Usage</h4>
-                <p>Use icon classes like <code>icon-save</code>, <code>icon-edit</code>, and <code>icon-trash</code> inside the button tag to add icons before the text. Ensure that these icons have enough space and are visually aligned with the button text.</p>
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code>&lt;button class="bg-[#28A745] text-white font-bold py-3 px-6 rounded flex items-center gap-2"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"&gt;
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" /&gt;
+    &lt;/svg&gt;
+    Save
+&lt;/button&gt;
+&lt;button class="bg-[#F4C96B] text-white font-bold py-3 px-6 rounded flex items-center gap-2"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"&gt;
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" /&gt;
+    &lt;/svg&gt;
+    Edit
+&lt;/button&gt;
+&lt;button class="bg-[#BD0202] text-white font-bold py-3 px-6 rounded flex items-center gap-2"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"&gt;
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2m8-10h2M2 12H4m15.364-5.636l1.414 1.414M6.343 17.657l1.414 1.414m0-12.728l1.414 1.414M17.657 17.657l1.414 1.414" /&gt;
+    &lt;/svg&gt;
+    Delete
+&lt;/button&gt;</code></pre>
+                </div>
             </section>
 
             <!-- Pagination Buttons Section -->
-            <section class="flex flex-col gap-y-5">
-                <h3 class="text-2xl">Pagination Buttons</h3>
-                <p>Pagination buttons help users navigate through large sets of data, such as tables or reports. These are typically used for previous and next navigation.</p>
+            <section class="bg-[#D3D3D3] p-5 rounded">
+                <h3 id="pagination" class="text-2xl font-semibold mb-3">Pagination Buttons</h3>
+                <p class="mb-4">Pagination buttons help users navigate through large sets of data, such as tables or reports.</p>
 
-                <!-- Example of Pagination Buttons -->
-                <div class="button-group">
-                    <button class="button disabled" aria-label="Previous" role="button"><span class="icon-arrow-left"></span> Previous</button>
-                    <button class="button" role="button">Next <span class="icon-arrow-right"></span></button>
+                <!-- Pagination Buttons -->
+                <div class="flex space-x-4 ">
+                    <button class="bg-[#483C32] text-white font-bold py-4 px-8 rounded flex items-center gap-2 shadow-lg hover:bg-opacity-70 transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer">Previous</button>
+                    <button class="bg-[#BBA79C] text-white font-bold py-4 px-8 rounded flex items-center gap-2 shadow-lg hover:bg-opacity-70 transition duration-200 ease-in-out transform hover:scale-105 cursor-pointer">Next</button>
                 </div>
 
-                <h4 class="text-lg">Usage</h4>
-                <p>Wrap multiple pagination buttons inside a <code>button-group</code> container. Use icons like <code>icon-arrow-left</code> and <code>icon-arrow-right</code> to visually distinguish navigation direction.</p>
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code>&lt;div class="flex space-x-4"&gt;
+    &lt;button class="bg-[#483C32] text-white font-bold py-3 px-6 rounded"&gt;Previous&lt;/button&gt;
+    &lt;button class="bg-[#BBA79C] text-white font-bold py-3 px-6 rounded"&gt;Next&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
             </section>
+            <!-- Checkboxes Section -->
+            <section class="bg-[#D3D3D3] p-5 rounded">
+                <h3 id="checkboxes" class="text-2xl font-semibold mb-3">Checkboxes</h3>
+                <p class="mb-4">
+                    Checkboxes may aid in filtering data in a number of ways from emphasizing certain displayed data over others or
+                    rendering some instead of others to begin with.
+                </p>
 
+                <!-- Checkboxes -->
+                <div class="flex space-x-4 ">
+                    <div class="flex items-center">
+                        <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#83ABD0] bg-gray-100 border-gray-300 rounded focus:ring-[#83ABD0] dark:focus:ring-[#83ABD0] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
+                    </div>
+                </div>
+
+                <!-- Code Snippet -->
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <pre><code> &lt;div class=&quot;flex items-center&quot;&gt;
+    &lt;input checked id=&quot;checked-checkbox&quot; type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;w-4 h-4 text-[#83ABD0] bg-gray-100 border-gray-300 rounded focus:ring-[#83ABD0] dark:focus:ring-[#83ABD0] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600&quot;&gt;
+    &lt;label for=&quot;checked-checkbox&quot; class=&quot;ms-2 text-sm font-medium text-gray-900 dark:text-gray-300&quot;&gt;Checked state&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </section>
         </div>
     </div>
 </body>
