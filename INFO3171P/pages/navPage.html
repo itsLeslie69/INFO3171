@@ -4,111 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/output.css">
-    <title>Typography | Star Air</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Navigation | Star Air</title>
+    <style>
+        .tab-code {
+            background-color: #36454F;
+            opacity: 0.7;
+            overflow-x: auto;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+            color: white;
+        }
+
+        .section {
+            background-color: rgba(211, 211, 211, 0.7);
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
-<body class="h-screen">
-    <!--Header Image-->
-    <div class="bg-[#BBA79C] bg-opacity-20 flex flex-col justify-center items-center w-screen h-96 p-5 pt-8">
-        <img src="../images/starair.png" class="w-25 h-3/4" />
+
+<body class="bg-[#F5F5DC]">
+    <!-- Header Image -->
+    <div class="bg-[#D3D3D3] bg-opacity-70 flex flex-col justify-center items-center w-full h-96 p-5 pt-8">
+        <img src="../images/starair.png" class="w-25 h-3/4" alt="Star Air Logo">
         <h1 class="text-5xl">Star Air Pattern Library</h1>
     </div>
-
     <div class="sideContentContainer grid grid-cols-6 mt-[2%]">
-        <div></div>
-        <!--Sidebar-->
-        <div class="bg-[#008970] bg-opacity-30 flex flex-col rounded-lg p-5 shadow gap-y-5">
+        <!-- Sidebar -->
+        <div class="bg-[#83ABD0] bg-opacity-90 flex flex-col rounded-lg p-5 shadow gap-y-5">
             <p class="border-b-2 border-b-black font-semibold">Basics</p>
             <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
                 <a href="../index.html" class="sidebar-link">Colour</a>
                 <a href="../pages/layout.html" class="sidebar-link">Layout</a>
                 <a href="../pages/typography.html" class="sidebar-link">Typography</a>
-                <a href="../pages/dataVisualization.html" class="sidebar-link">Data Visualization</a>
+                <a href="../pages/dataVis.html" class="sidebar-link">Data Visualization</a>
             </div>
             <p class="border-b-2 border-b-black font-semibold">Components</p>
             <div class="text-black-300 text-sm flex flex-col justify-center items-start gap-x-4 gap-y-4">
                 <a href="../pages/tables.html" class="sidebar-link">Tables</a>
                 <a href="../pages/numbers.html" class="sidebar-link">Numbers</a>
                 <a href="../pages/navPage.html" class="sidebar-link">Navigation</a>
-                <a href="#" class="sidebar-link">Buttons</a>
+                <a href="../pages/buttons.html" class="sidebar-link">Buttons</a>
                 <a href="../pages/icons.html" class="sidebar-link">Icons</a>
                 <a href="../pages/feedback.html" class="sidebar-link">Feedback</a>
             </div>
         </div>
+        <div></div>
         <!-- Page Content -->
-        <div class="pageContent col-span-3 p-5 flex flex-col gap-y-5">
-            <h2 class="text-4xl bg-[#D3D3D3] w-min p-5 rounded-3xl">Navigation</h2>
+        <div class="pageContent ml-5 col-span-3 flex flex-col gap-y-5">
+           <div class="flex flex-col gap-y-5 bg-[#D3D3D3] p-5 rounded-lg">
+                <h2 class="text-4xl">Navigation Structure</h2>
+                <p>This section describes the navigation structure within the application, detailing the purpose and usage of each navigation element.</p>
+           </div>
             <!--Page Nav-->
-            <ul class="flex gap-x-4 p-5 w-full">
+            <ul class="flex gap-x-4 p-5 w-full bg-[#D3D3D3] bg-opacity-70 rounded-lg">
                 <li>
-                    <a href="#" class="body-nav-text font-semibold">Test</a>
+                    <a href="#overview" class="body-nav-text font-semibold">Overview</a>
                 </li>
                 <li>
-                    <a href="#" class="body-nav-text font-semibold">Test</a>
+                    <a href="#local-navigation" class="body-nav-text font-semibold">Local Navigation</a>
                 </li>
                 <li>
-                    <a href="#" class="body-nav-text font-semibold">Test</a>
-                </li>
-                <li>
-                    <a href="#" class="body-nav-text font-semibold">Test</a>
+                    <a href="#dropdown-navigation" class="body-nav-text font-semibold">Dropdown Navigation</a>
                 </li>
             </ul>
-            <section class="flex flex-col gap-y-5">
-                <h3>Website Navbar</h3>
-                <div class="flex flex-col flex-wrap gap-5 w-full">
-                    <div class="p-5 flex w-full">
-                        <div class="bg-[#F58634] bg-opacity-30 flex rounded-lg p-5 shadow gap-y-5 w-full">
-                            <div class="text-black-300 text-sm flex items-center gap-x-4 gap-y-4 w-full">
-                                <a href="#" class="sidebar-link">Logo</a>
-                                <a href="#" class="sidebar-link">Book</a>
-                                <a href="#" class="sidebar-link">Travel Info</a>
-                                <a href="" class="sidebar-link">Membership</a>
-                                <a href="#" class="sidebar-link">Login | Sign up</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-5 flex flex-col">
-                        <h3>Code</h3>
-                        <code>
-                            code here
-                        </code>
-                    </div>
-                </div>
+
+            <!-- Overview Section -->
+            <section id="overview" class="section flex flex-col gap-y-5">
+                <h3 class="text-2xl">Overview</h3>
+                <p>The navigation menu allows users to easily access different sections of the application. It is designed to be intuitive and user-friendly.</p>
             </section>
-            <section class="flex flex-col gap-y-5">
-                <h3>Local Navbar</h3>
-                <div class="p-5 flex gap-y-5">
-                    <div>
-                        <ul class="flex gap-x-4 p-5 w-full">
-                            <li>
-                                <a href="#" class="body-nav-text font-semibold">Test</a>
-                            </li>
-                            <li>
-                                <a href="#" class="body-nav-text font-semibold">Test</a>
-                            </li>
-                            <li>
-                                <a href="#" class="body-nav-text font-semibold">Test</a>
-                            </li>
-                            <li>
-                                <a href="#" class="body-nav-text font-semibold">Test</a>
-                            </li>
-                        </ul>
-                    </div>
-                <div class="p-5 flex flex-col gap-y-5 w-2/6">
-                    <h3>Code</h3>
+
+            <!-- Local Navigation Section -->
+            <section id="local-navigation" class="section  flex flex-col gap-y-5">
+                <h3 class="text-2xl">Local Navigation</h3>
+                <p>Local navigation is used for jumping between related pages. For example, the account section includes links to Overview, Settings, and Billing.</p>
+
+                <nav class="flex space-x-4 bg-[#83ABD0] p-3 rounded-md shadow-lg">
+                    <a href="#/account/" class="text-[#36454F] hover:underline">Overview</a>
+                    <a href="#/account/settings" class="text-[#36454F] hover:underline">Settings</a>
+                    <a href="#/account/billing" class="text-[#36454F] hover:underline">Billing</a>
+                    <a href="#/account/integrations" class="text-[#36454F] hover:underline">Integrations</a>
+                </nav>
+                <p>Local navigation is present on all pages under /account and indicates the currently viewed section in the specified color.</p>
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
                     <code>
-                        here is my code
+&lt;nav class="flex flex-col gap-y-5"&gt;<br>
+&nbsp;&nbsp;&lt;h3&gt;Overview&lt;/h3&gt;<br>
+&nbsp;&nbsp;&lt;ul&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#/account/"&gt;Overview&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#/account/settings"&gt;Settings&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#/account/billing"&gt;Billing&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#/account/integrations"&gt;Integrations&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;/ul&gt;<br>
+&lt;/nav&gt;
                     </code>
                 </div>
+            </section>
+
+            <!-- Dropdown Navigation Section -->
+            <section id="dropdown-navigation" class="section  flex flex-col gap-y-5 items-start">
+                <h3 class="text-2xl">Dropdown Navigation</h3>
+                <p>Dropdown menus are useful for organizing sub-sections under a main category. Click to reveal more options.</p>
+
+                <div class="relative inline-block text-left">
+                    <div>
+                        <button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="dropdown-button">
+                            Account
+                            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06 0L10 10.293l3.71-3.09a.75.75 0 111.03 1.09l-4.25 3.5a.75.75 0 01-1.03 0l-4.25-3.5a.75.75 0 010-1.09z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="dropdown-content absolute right-0 z-10 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden" id="dropdown-menu">
+                        <div class="py-1">
+                            <a href="#/account/users" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Users</a>
+                            <a href="#/account/contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact Info</a>
+                            <a href="#/account/data" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Manage Data</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#36454F] text-white p-4 rounded mt-4 overflow-x-auto">
+                    <code>
+&lt;div class="relative inline-block text-left"&gt;<br>
+&nbsp;&nbsp;&lt;button class="inline-flex justify-center w-full rounded-md"&gt;Account&lt;/button&gt;<br>
+&nbsp;&nbsp;&lt;div class="dropdown-content"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#/account/users"&gt;Users&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#/account/contact"&gt;Contact Info&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#/account/data"&gt;Manage Data&lt;/a&gt;<br>
+&nbsp;&nbsp;&lt;/div&gt;<br>
+&lt;/div&gt;
+                    </code>
                 </div>
             </section>
-            <!--Code-->
-            <hr>
-            <section class="flex flex-col gap-y-5">
-                <h3>Code</h3>
-               
-            </section>
         </div>
-    </div>
 
+        <div></div>
+    </div>
 </body>
-</html>
+
+</html> 
+
